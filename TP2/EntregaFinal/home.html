@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,12 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
-<body>
 
     <div class="fondo">
-        
         <header>
             <div class="nav">
                 <ul>
@@ -27,11 +28,11 @@
         </header>
 
         <!-- Carrusel Grande -->
-         <!-- le puse display none para que desaparezca, sacarle el style para que aparezca -->
-    <section class="container-componente-carousel-grande" style="display: none;">
-        <h1 class="titulo-carusel">Destacados</h1>
-        <div class="carrusel-grande-container">
-            <button class="boton-izq"> <img src=""></button>
+        <!-- le puse display none para que desaparezca, sacarle el style para que aparezca -->
+        <section class="container-componente-carousel-grande" style="display: none;">
+            <h1 class="titulo-carusel">Destacados</h1>
+            <div class="carrusel-grande-container">
+                <button class="boton-izq"> <img src=""></button>
                 <div class="imagenes-container">
                     <div class="imagenes">
                         <div class="img img1">
@@ -40,48 +41,74 @@
                         </div>
                         <div class="img img2">
                             <img class="img-desktop" src="" alt="">
-                            <img  class="img-mobile" src="" alt="">
+                            <img class="img-mobile" src="" alt="">
                         </div>
                         <div class="img img3">
                             <img class="img-desktop" src="" alt="">
                             <img class="img-mobile" src="" alt="">
                         </div>
                     </div>
-            </div>
+                </div>
                 <button class="boton-der"> <img src=""> </button>
             </div>
-    </section>
+        </section>
 
+        <!-- Carrusel de Categorias -->
+        <!-- <section class="Container-carrusel">
 
-    <!-- Carrusel de Categorias -->
-        
-    <section class="Container-carrusel" style="display: none;">
+            <h1 class="Categoria">Acción</h1>
+            <div class="Carrusel-categorias"> -->
 
-        <h1 class="Categoria">Acción</h1>    
-
-        <div class="Carrusel-categorias">
-            <button class="boton-izq"> <img src=""></button>
-            <div class="carrusel">
-                <div class="slide slideCarruselScroll">
-                    <img src="" />
-                    <div class="titulo-card">
-                        <h2>Sims 4</h2>
-                        <h2 class="tipo-card">En tu biblioteca 
-                            <img src="" alt="">
-                        </h2>
+                <!-- <button class="boton-izq"> <img src=""></button> -->
+                <!-- <div class="carrusel">
+                    
+                    <div class="slide slideCarruselScroll">
+                        <div class="card">
+                            <img src="" alt="" class="card-estado-etiqueta">
+                            <img src="imgs/foto-web-jueguitos/Accion/call-duty-wwii.webp"/>
+                            <div class="pie-card">
+                                <h2 class="card-titulo-juego">Sims 4</h2>
+                                <h2 class="card-estado">En tu biblioteca
+                                </h2>
+                            </div>
+                        </div>
+                        
                     </div>
+                    <button class="boton-der"> <img src=""></button>
+
+                </div> -->
+                <!-- class rectangle es para  rectangulo footer car -->
+                 <!-- NO BORRAR ESTE CARD, ME RE COSTO MAÑANA SIGO Y TERMINO EL CARRUSEL -->
+                 <div class="card-FREE">
+                     
+                     <div class="card">
+                         <div class="overlap-group">
+                             <img class="card-img-juego rectangle" src="imgs/foto-web-jueguitos/Accion/call-duty-wwii.webp" />
+                             <div class="extra-bold card-titulo-juego"><h2 class="h-px">Sims 4</h2></div>
+                             <p class="card-estado">FREE</p>
+                            </div>
+                        </div>
+                        <!-- wrapper es el estado del juego -->
+                        <div class="div-wrapper">
+                            <div class="div-wrapper">
+                                <div class="div">
+                                    <div class="rectangle-2"></div>
+                                    <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" /></div>
+                              </div>
+                            </div>
+                            <div class="p"><div class="p-px">FREE</div></div>
+                        </div>
+                        
+                    </div>
+                    
                 </div>
-                <button class="boton-der"> <img src=""></button>
-
-            </div>
-
-        </div>
-    </section>    
+        </section>
         
     </div>
+    
     <!-- <footer>
         <div>
-          <ul>
+            <ul>
             <li class="logo"><a href=""><img src="" alt=""></a></li>
             <ol>
             <li class="Ayuda">Ayuda</li>
@@ -97,15 +124,13 @@
           </ul> 
         </div>
     </footer>  -->
-
-
     <footer>
         <div class="footer-container">
             <!-- Imagen a la izquierda -->
             <div class="footer-image">
                 <img src="imgs/logoFooter.png" alt="">
             </div>
-    
+
             <!-- Enlaces de ayuda -->
             <div class="footer-links">
                 <section>
@@ -116,7 +141,7 @@
                         <li><a href="#">Feedback</a></li>
                     </ul>
                 </section>
-    
+
                 <!-- Enlaces de desarrolladores -->
                 <section>
                     <h2>Desarrolladores</h2>
@@ -125,7 +150,7 @@
                         <li><a href="#">¿Quiénes somos?</a></li>
                     </ul>
                 </section>
-    
+
                 <!-- Enlaces de términos de uso -->
                 <section>
                     <h2>Términos de uso</h2>
@@ -134,7 +159,7 @@
                         <li><a href="#">Ámbito de validez</a></li>
                     </ul>
                 </section>
-    
+
                 <!-- Enlaces de privacidad -->
                 <section>
                     <h2>Privacidad</h2>
@@ -144,7 +169,7 @@
                     </ul>
                 </section>
             </div>
-    
+
             <!-- Redes sociales -->
             <div class="footer-social">
                 <ul>
@@ -155,7 +180,6 @@
             </div>
         </div>
     </footer>
-
-    
 </body>
+
 </html>
