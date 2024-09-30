@@ -86,7 +86,7 @@
 /* fin header */
 
 /* carrusels por categorias */
-.card-FREE {
+.card {
     margin-left: 450px;
     margin-top: 150px;
     width: 210px;
@@ -94,58 +94,74 @@
     position: relative;
   }
 
-.card-FREE .overlap-group {
-    position: relative;
-    height: 226px;
+.card .overlap-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
     width: 204px;
-    top: -3px;
+    height: 226px;
     background-color: var(--collection-1-gris-cards);
 }
 
-.card-FREE .card {
+.card .car {
   position: absolute;
   width: 100%;
   height: 226px;
   top: 11px;
-  left: 6px;
+  left: 7.3px;
 }
-  
-  .card-FREE .extra-bold {
-    position: absolute;
-    width: 112px;
-    height: 22px;
-    top: 185px;
-    left: 53px;
-  }
-  
-  .card-FREE .h-px {
-    position: absolute;
-    width: 112px;
-    top: 0;
-    left: 0;
+
+.card .card-img-juego {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid var(--collection-1-gris-cards);
+}
+.card .card-pie {
+    margin-top: 4px;
+    height: auto;
+    width: 204px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+.card .card-estado {
+    display: flex;
+    flex-direction: row;
+    font-family: "Lato-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--collection-1-verde-primario);
+    font-size: 14px;
+    text-align: center;
+}
+
+.card-img-tilde{
+    width: 16px;
+    height: 13px;
+    margin-left: 10px;
+    margin-top: 1px;
+}
+
+.card .h-px {
     font-family: "Lato-Medium", Helvetica;
     font-weight: 500;
     color: #ffffff;
     font-size: 18px;
     text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .card-FREE .card-img-juego {
-    position: absolute;
-    width: 204px;
-    height: 180px;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    border-radius: 6px 6px 6px 0px;
-    --collection-1-gris-cards: rgba(27, 27, 27, 1);
-    border: 2px solid var(--collection-1-gris-cards);
-    position: absolute;
-  }
-  
-  .card-FREE .div-wrapper {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.card .extra-bold {
+    position: relative; 
+    width: 100%;
+    text-align: center;
+}
+  .card .div-wrapper {
     position: absolute;
     width: 59px;
     height: 29px;
@@ -153,7 +169,7 @@
     left: 0;
   }
   
-  .card-FREE .rectangle-2 {
+  .card .rectangle-2 {
     width: 59px;
     height: 21px;
     top: 0;
@@ -164,7 +180,7 @@
     background-color: var(--collection-1-verde-primario);
   }
   
-  .card-FREE .rectangle-wrapper {
+  .card .rectangle-wrapper {
     position: absolute;
     width: 9px;
     height: 8px;
@@ -174,7 +190,7 @@
     border-radius: 0px 0px 0px 3px;
   }
   
-  .card-FREE .rectangle-3 {
+  .card .rectangle-3 {
     width: 9px;
     height: 5px;
     top: 0;
@@ -182,18 +198,17 @@
     left: 0;
   }
   
-  .card-FREE .p {
+  .card .p {
     position: absolute;
     width: 35px;
     height: 17px;
     top: 2px;
-    left: 12px;
+    left: 9px;
   }
   
-  .card-FREE .p-px {
+  .card .p-px {
     position: absolute;
     width: 35px;
-    top: -1px;
     left: 0;
     font-family: "Lato-ExtraBold", Helvetica;
     font-weight: 800;
@@ -203,18 +218,6 @@
     line-height: normal;
   }
   
-  .card-FREE .card-estado {
-    position: absolute;
-    width: 69px;
-    top: 212px;
-    left: 77px;
-    font-family: "Lato-Regular", Helvetica;
-    font-weight: 400;
-    color: var(--collection-1-verde-primario);
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: 0;
-  }
   
 
 /* carrusels por categorias */
