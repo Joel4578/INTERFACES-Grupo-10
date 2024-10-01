@@ -6,179 +6,272 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
 </head>
+<body>
+    
+    <header>
+        <div class="nav">
+            <ul>
+                <li id="menuHmaburguesa"><a href=""><img src="imgs/Menu hamburguesa.png" alt=""></a></li>
+                <li id="search"><input placeholder="Buscar Juego"></input></li>
+                <li id="tituloPrincipal"><a href="home.html"><img src="imgs/Logo.png" alt=""></a></li>
+                <li id="carrito"><a href=""><img src="imgs/cart-plus-svgrepo-com 1.png" alt=""></a></li>
+                <li id="cuenta"><a href="inicioSesion.html"><img src="imgs/login.png" alt=""></a></li>
+            </ul>
+        </div>
+    </header>
 
-    <div class="fondo">
-        <header>
-            <div class="nav">
-                <ul>
-                    <li id="menuHmaburguesa"><a href=""><img src="imgs/Menu hamburguesa.png" alt=""></a></li>
-                    <li id="search"><input placeholder="Buscar Juego"></input></li>
-                    <li id="tituloPrincipal"><a href="home.html"><img src="imgs/Logo.png" alt=""></a></li>
-                    <li id="carrito"><a href=""><img src="imgs/cart-plus-svgrepo-com 1.png" alt=""></a></li>
-                    <li id="cuenta"><a href="inicioSesion.html"><img src="imgs/login.png" alt=""></a></li>
-                </ul>
+    <!-- Carrusel Grande -->
+    <!-- le puse display none para que desaparezca, sacarle el style para que aparezca -->
+    <section class="container-componente-carousel-grande" style="display: none;">
+        <h1 class="titulo-carusel">Destacados</h1>
+        <div class="carrusel-grande-container">
+            <button class="boton-izq"> <img src=""></button>
+            <div class="imagenes-container">
+                <div class="imagenes">
+                    <div class="img img1">
+                        <img class="img-desktop" src="" alt="">
+                        <img class="img-mobile" src="" alt="">
+                    </div>
+                    <div class="img img2">
+                        <img class="img-desktop" src="" alt="">
+                        <img class="img-mobile" src="" alt="">
+                    </div>
+                    <div class="img img3">
+                        <img class="img-desktop" src="" alt="">
+                        <img class="img-mobile" src="" alt="">
+                    </div>
+                </div>
             </div>
-        </header>
-
-        <!-- Carrusel Grande -->
-        <!-- le puse display none para que desaparezca, sacarle el style para que aparezca -->
-        <section class="container-componente-carousel-grande" style="display: none;">
-            <h1 class="titulo-carusel">Destacados</h1>
-            <div class="carrusel-grande-container">
-                <button class="boton-izq"> <img src=""></button>
-                <div class="imagenes-container">
-                    <div class="imagenes">
-                        <div class="img img1">
-                            <img class="img-desktop" src="" alt="">
-                            <img class="img-mobile" src="" alt="">
-                        </div>
-                        <div class="img img2">
-                            <img class="img-desktop" src="" alt="">
-                            <img class="img-mobile" src="" alt="">
-                        </div>
-                        <div class="img img3">
-                            <img class="img-desktop" src="" alt="">
-                            <img class="img-mobile" src="" alt="">
+            <button class="boton-der"> <img src=""> </button>
+        </div>
+    </section>
+            
+        <!-- componente card -->
+            <div class="card">
+                <div class="car">
+                    <div class="overlap-group">
+                        <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/call-duty-wwii.webp" />
+                        <div class="card-pie">
+                            <div class="extra-bold card-titulo-juego">
+                                <h2 class="h-px">Call of Duty</h2>
+                            </div>
+                            <div class="card-estado">
+                                <p>en tu biblioteca</p>
+                                <img class="card-img-tilde" src="imgs/tilde.svg" alt="este juego esta en tu biblioteca">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <button class="boton-der"> <img src=""> </button>
-            </div>
-        </section>
-
-        <!-- Carrusel de Categorias -->
-        <!-- <section class="Container-carrusel">
-
-            <h1 class="Categoria">Acción</h1>
-            <div class="Carrusel-categorias"> -->
-
-                <!-- <button class="boton-izq"> <img src=""></button> -->
-                <!-- <div class="carrusel">
-                    
-                    <div class="slide slideCarruselScroll">
-                        <div class="card">
-                            <img src="" alt="" class="card-estado-etiqueta">
-                            <img src="imgs/foto-web-jueguitos/Accion/call-duty-wwii.webp"/>
-                            <div class="pie-card">
-                                <h2 class="card-titulo-juego">Sims 4</h2>
-                                <h2 class="card-estado">En tu biblioteca
-                                </h2>
-                            </div>
-                        </div>
-                        
+                <!-- wrapper es el estado del juego -->
+                <div class="div-wrapper">
+                    <div class="div-wrapper">
+                        <div class="rectangle-2"></div>
+                        <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" /></div>
                     </div>
-                    <button class="boton-der"> <img src=""></button>
+                    <div class="p">
+                        <div class="p-px">FREE</div>
+                    </div>
+                </div>
+            </div>
+        <!-- fin componente card -->
+<!-- carrusel no terminado, no tocar nada mañana lo sigo -->
+    <section class="juegos-por-categoria">
 
-                </div> -->
-                 <div class="card">
-                     <div class="car">
-                         <div class="overlap-group">
-                             <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/call-duty-wwii.webp"/>
-                             <div class="card-pie">
-                                    <div class="extra-bold card-titulo-juego"><h2 class="h-px">Call of Duty</h2></div>
+        <div class="categoria-con-juegos">
+
+            <h2 class="nombre-categoria">Juegos Accion</h2>
+
+            <div class="carrusel-juegos">
+            <img class="flecha-izq" src="imgs/Flecha.svg" />
+
+                <div class="juegos">
+
+                    <div class="card">
+                        <div class="car">
+                            <div class="overlap-group">
+                                <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/call-duty-wwii.webp" />
+                                <div class="card-pie">
+                                    <div class="extra-bold card-titulo-juego">
+                                        <h2 class="h-px">Call of Duty</h2>
+                                    </div>
                                     <div class="card-estado">
-                                        <p>en tu biblioteca</p> 
+                                        <p>en tu biblioteca</p>
                                         <img class="card-img-tilde" src="imgs/tilde.svg" alt="este juego esta en tu biblioteca">
                                     </div>
-                             </div>
+                                </div>
                             </div>
                         </div>
                         <!-- wrapper es el estado del juego -->
                         <div class="div-wrapper">
                             <div class="div-wrapper">
-                                    <div class="rectangle-2"></div>
-                                    <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" /></div>
+                                <div class="rectangle-2"></div>
+                                <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" /></div>
                             </div>
-                            <div class="p"><div class="p-px">FREE</div></div>
+                            <div class="p">
+                                <div class="p-px">FREE</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="car">
+                            <div class="overlap-group">
+                                <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/call-duty-wwii.webp" />
+                                <div class="card-pie">
+                                    <div class="extra-bold card-titulo-juego">
+                                        <h2 class="h-px">Call of Duty</h2>
+                                    </div>
+                                    <div class="card-estado">
+                                        <p>en tu biblioteca</p>
+                                        <img class="card-img-tilde" src="imgs/tilde.svg" alt="este juego esta en tu biblioteca">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- wrapper es el estado del juego -->
+                        <div class="div-wrapper">
+                            <div class="div-wrapper">
+                                <div class="rectangle-2"></div>
+                                <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" /></div>
+                            </div>
+                            <div class="p">
+                                <div class="p-px">FREE</div>
+                            </div>
                         </div>
                     </div>
                     
+                    <div class="card">
+                        <div class="car">
+                            <div class="overlap-group">
+                                <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/call-duty-wwii.webp" />
+                                <div class="card-pie">
+                                    <div class="extra-bold card-titulo-juego">
+                                        <h2 class="h-px">Call of Duty</h2>
+                                    </div>
+                                    <div class="card-estado">
+                                        <p>en tu biblioteca</p>
+                                        <img class="card-img-tilde" src="imgs/tilde.svg" alt="este juego esta en tu biblioteca">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- wrapper es el estado del juego -->
+                        <div class="div-wrapper">
+                            <div class="div-wrapper">
+                                <div class="rectangle-2"></div>
+                                <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" /></div>
+                            </div>
+                            <div class="p">
+                                <div class="p-px">FREE</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="car">
+                            <div class="overlap-group">
+                                <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/call-duty-wwii.webp" />
+                                <div class="card-pie">
+                                    <div class="extra-bold card-titulo-juego">
+                                        <h2 class="h-px">Call of Duty</h2>
+                                    </div>
+                                    <div class="card-estado">
+                                        <p>en tu biblioteca</p>
+                                        <img class="card-img-tilde" src="imgs/tilde.svg" alt="este juego esta en tu biblioteca">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- wrapper es el estado del juego -->
+                        <div class="div-wrapper">
+                            <div class="div-wrapper">
+                                <div class="rectangle-2"></div>
+                                <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" /></div>
+                            </div>
+                            <div class="p">
+                                <div class="p-px">FREE</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-        </section>
-        
-    </div>
-    
-    <!-- <footer>
-        <div>
-            <ul>
-            <li class="logo"><a href=""><img src="" alt=""></a></li>
-            <ol>
-            <li class="Ayuda">Ayuda</li>
-            <li>Acerca de</li>
-            <li>Preguntas frecuentes</li>
-            <li>Feedback</li>
-            </ol>
-            <ol>
-            <li class="Desarrolladores">Desarrolladores</li>
-            <li>FYQ</li>
-            <li>Quienes somos?</li>
-            </ol>
-          </ul> 
+            <img class="flecha-der" src="imgs/flechaDerecha.svg" />
+            </div>
+
         </div>
-    </footer>  -->
-    <footer>
-        <div class="footer-container">
-            <!-- Imagen a la izquierda -->
-            <div class="footer-image">
-                <img src="imgs/logoFooter.png" alt="">
-            </div>
 
-            <!-- Enlaces de ayuda -->
-            <div class="footer-links">
-                <section>
-                    <h2>Ayuda</h2>
-                    <ul>
-                        <li><a href="#">Acerca de</a></li>
-                        <li><a href="#">Preguntas frecuentes</a></li>
-                        <li><a href="#">Feedback</a></li>
-                    </ul>
-                </section>
+    </section>
+</div>
 
-                <!-- Enlaces de desarrolladores -->
-                <section>
-                    <h2>Desarrolladores</h2>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">¿Quiénes somos?</a></li>
-                    </ul>
-                </section>
+</div>
+</section>
 
-                <!-- Enlaces de términos de uso -->
-                <section>
-                    <h2>Términos de uso</h2>
-                    <ul>
-                        <li><a href="#">Uso de la página</a></li>
-                        <li><a href="#">Ámbito de validez</a></li>
-                    </ul>
-                </section>
 
-                <!-- Enlaces de privacidad -->
-                <section>
-                    <h2>Privacidad</h2>
-                    <ul>
-                        <li><a href="#">Declaración de Privacidad</a></li>
-                        <li><a href="#">Declaración de cookies</a></li>
-                    </ul>
-                </section>
-            </div>
 
-            <!-- Redes sociales -->
-            <div class="footer-social">
+
+
+
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-image">
+            <img src="imgs/logoFooter.png" alt="">
+        </div>
+
+        <div class="footer-links">
+            <section>
+                <h2>Ayuda</h2>
                 <ul>
-                    <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
-                    <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Feedback</a></li>
                 </ul>
-            </div>
+            </section>
+
+            <section>
+                <h2>Desarrolladores</h2>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">¿Quiénes somos?</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Términos de uso</h2>
+                <ul>
+                    <li><a href="#">Uso de la página</a></li>
+                    <li><a href="#">Ámbito de validez</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Privacidad</h2>
+                <ul>
+                    <li><a href="#">Declaración de Privacidad</a></li>
+                    <li><a href="#">Declaración de cookies</a></li>
+                </ul>
+            </section>
         </div>
-    </footer>
+
+        <div class="footer-social">
+            <ul>
+                <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer> 
 </body>
 
 </html>
