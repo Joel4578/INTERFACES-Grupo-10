@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+
     <header>
         <div class="nav">
             <ul>
@@ -30,92 +31,165 @@
         </div>
     </header>
 
-    <!-- Carrusel Grande -->
-    <!-- le puse display none para que desaparezca, sacarle el style para que aparezca -->
-    <section class="container-componente-carousel-grande" style="display: none;">
-        <h1 class="titulo-carusel">Destacados</h1>
-        <div class="carrusel-grande-container">
-            <button class="boton-izq"> <img src=""></button>
-            <div class="imagenes-container">
-                <div class="imagenes">
-                    <div class="img img1">
-                        <img class="img-desktop" src="" alt="">
-                        <img class="img-mobile" src="" alt="">
-                    </div>
-                    <div class="img img2">
-                        <img class="img-desktop" src="" alt="">
-                        <img class="img-mobile" src="" alt="">
-                    </div>
-                    <div class="img img3">
-                        <img class="img-desktop" src="" alt="">
-                        <img class="img-mobile" src="" alt="">
-                    </div>
-                </div>
+    <!-- Carrusel Principal -->
+    <section class="section-juegos-destacados">
+        <p class="nombre-categoria">Juegos Destacados</p>
+        <div class="cards-flechas">
+            <img src="imgs/Flecha.svg" alt="">
+            <div class="juegos-destacados">
+                
             </div>
-            <button class="boton-der"> <img src=""> </button>
+            <img src="imgs/flechaDerecha.svg" alt="">
         </div>
-    </section>
-            
-        <!-- componente card -->
-            <div class="card">
-                <div class="car">
-                    <div class="overlap-group">
-                        <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/call-duty-wwii.webp" />
-                        <div class="card-pie">
-                            <div class="extra-bold card-titulo-juego">
-                                <h2 class="h-px">Call of Duty</h2>
-                            </div>
-                            <div class="card-estado">
-                                <p>en tu biblioteca</p>
-                                <img class="card-img-tilde" src="imgs/tilde.svg" alt="este juego esta en tu biblioteca">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- wrapper es el estado del juego -->
-                <div class="div-wrapper">
-                    <div class="div-wrapper">
-                        <div class="rectangle-2"></div>
-                        <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" /></div>
-                    </div>
-                    <div class="p">
-                        <div class="p-px">FREE</div>
-                    </div>
-                </div>
-            </div>
-        <!-- fin componente card -->
-<!-- carrusel no terminado, no tocar nada mañana lo sigo -->
-    <section class="juegos-por-categoria">
+        <div class="circulitos">
 
+        </div>
+
+    </section>
+
+    <section class="juegos-por-categoria">
+        <!-- Componente carrusel -->
         <div class="categoria-con-juegos">
 
             <h2 class="nombre-categoria">Juegos Accion</h2>
 
             <div class="carrusel-juegos">
-            <img class="flecha-izq" src="imgs/Flecha.svg" />
+                <img class="flecha-izq" id="scroll-btn-izquierda" src="imgs/Flecha.svg" />
 
                 <div class="juegos">
 
                     <div class="card">
                         <div class="car">
                             <div class="overlap-group">
-                                <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/call-duty-wwii.webp" />
+                                <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/Mortalcompat.jfif" />
                                 <div class="card-pie">
                                     <div class="extra-bold card-titulo-juego">
-                                        <h2 class="h-px">Call of Duty</h2>
+                                        <h2 class="h-px">Mortal Kom...</h2>
                                     </div>
                                     <div class="card-estado">
-                                        <p>en tu biblioteca</p>
-                                        <img class="card-img-tilde" src="imgs/tilde.svg" alt="este juego esta en tu biblioteca">
+                                        <p>FREE</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- wrapper es el estado del juego -->
                         <div class="div-wrapper">
                             <div class="div-wrapper">
                                 <div class="rectangle-2"></div>
-                                <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" /></div>
+                                <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" />
+                                </div>
+                            </div>
+                            <div class="p">
+                                <div class="p-px">FREE</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="car">
+                            <div class="overlap-group">
+                                <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/doom.jfif" />
+                                <div class="card-pie">
+                                    <div class="extra-bold card-titulo-juego">
+                                        <h2 class="h-px">Doom</h2>
+                                    </div>
+                                    <div class="card-estado">
+                                        <p>$500</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div-wrapper">
+                            <div class="div-wrapper">
+                                <div class="rectangle-2"></div>
+                                <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" />
+                                </div>
+                            </div>
+                            <div class="p">
+                                <div class="p-px">PAGO</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="car">
+                            <div class="overlap-group">
+                                <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/good of wars.jfif" />
+                                <div class="card-pie">
+                                    <div class="extra-bold card-titulo-juego">
+                                        <h2 class="h-px">Good of Wars</h2>
+                                    </div>
+                                    <div class="card-estado">
+                                        <p>en tu biblioteca</p>
+                                        <img class="card-img-tilde" src="imgs/tilde.svg"
+                                            alt="este juego esta en tu biblioteca">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="car">
+                            <div class="overlap-group">
+                                <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/descarga.jfif" />
+                                <div class="card-pie">
+                                    <div class="extra-bold card-titulo-juego">
+                                        <h2 class="h-px">Jetpack Joyr...</h2>
+                                    </div>
+                                    <div class="card-estado">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div-wrapper en-carro">
+                            <div class="div-wrapper">
+                                <div class="rectangle-2"></div>
+                                <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" />
+                                </div>
+                            </div>
+                            <div class="p">
+                                <p class="p-px">EN CARRO</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="car">
+                            <div class="overlap-group">
+                                <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/half life.jfif" />
+                                <div class="card-pie">
+                                    <div class="extra-bold card-titulo-juego">
+                                        <h2 class="h-px">Half Life</h2>
+                                    </div>
+                                    <div class="card-estado">
+                                        <p>en tu biblioteca</p>
+                                        <img class="card-img-tilde" src="imgs/tilde.svg"
+                                            alt="este juego esta en tu biblioteca">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="car">
+                            <div class="overlap-group">
+                                <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/comando 1.jfif" />
+                                <div class="card-pie">
+                                    <div class="extra-bold card-titulo-juego">
+                                        <h2 class="h-px">Comando 1</h2>
+                                    </div>
+                                    <div class="card-estado">
+                                        <p>FREE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div-wrapper">
+                            <div class="div-wrapper">
+                                <div class="rectangle-2"></div>
+                                <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" />
+                                </div>
                             </div>
                             <div class="p">
                                 <div class="p-px">FREE</div>
@@ -132,47 +206,19 @@
                                         <h2 class="h-px">Call of Duty</h2>
                                     </div>
                                     <div class="card-estado">
-                                        <p>en tu biblioteca</p>
-                                        <img class="card-img-tilde" src="imgs/tilde.svg" alt="este juego esta en tu biblioteca">
+                                        <p>$500</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- wrapper es el estado del juego -->
                         <div class="div-wrapper">
                             <div class="div-wrapper">
                                 <div class="rectangle-2"></div>
-                                <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" /></div>
-                            </div>
-                            <div class="p">
-                                <div class="p-px">FREE</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="car">
-                            <div class="overlap-group">
-                                <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/call-duty-wwii.webp" />
-                                <div class="card-pie">
-                                    <div class="extra-bold card-titulo-juego">
-                                        <h2 class="h-px">Call of Duty</h2>
-                                    </div>
-                                    <div class="card-estado">
-                                        <p>en tu biblioteca</p>
-                                        <img class="card-img-tilde" src="imgs/tilde.svg" alt="este juego esta en tu biblioteca">
-                                    </div>
+                                <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" />
                                 </div>
                             </div>
-                        </div>
-                        <!-- wrapper es el estado del juego -->
-                        <div class="div-wrapper">
-                            <div class="div-wrapper">
-                                <div class="rectangle-2"></div>
-                                <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" /></div>
-                            </div>
                             <div class="p">
-                                <div class="p-px">FREE</div>
+                                <div class="p-px">PAGO</div>
                             </div>
                         </div>
                     </div>
@@ -180,98 +226,90 @@
                     <div class="card">
                         <div class="car">
                             <div class="overlap-group">
-                                <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/call-duty-wwii.webp" />
+                                <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/Fighters 2.png" />
                                 <div class="card-pie">
                                     <div class="extra-bold card-titulo-juego">
-                                        <h2 class="h-px">Call of Duty</h2>
+                                        <h2 class="h-px">Fighters 2</h2>
                                     </div>
                                     <div class="card-estado">
-                                        <p>en tu biblioteca</p>
-                                        <img class="card-img-tilde" src="imgs/tilde.svg" alt="este juego esta en tu biblioteca">
+                                        <p>FREE</p>
+                                        <img class="card-img-tilde" src="imgs/tilde.svg"
+                                            alt="este juego esta en tu biblioteca">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- wrapper es el estado del juego -->
                         <div class="div-wrapper">
                             <div class="div-wrapper">
                                 <div class="rectangle-2"></div>
-                                <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" /></div>
+                                <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" />
+                                </div>
                             </div>
                             <div class="p">
                                 <div class="p-px">FREE</div>
                             </div>
                         </div>
                     </div>
+
                 </div>
-            <img class="flecha-der" src="imgs/flechaDerecha.svg" />
+                <img class="flecha-der" id="scroll-btn-derecha" src="imgs/flechaDerecha.svg" />
             </div>
 
         </div>
-
     </section>
-</div>
 
-</div>
-</section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-image">
+                <img src="imgs/logoFooter.png" alt="">
+            </div>
 
+            <div class="footer-links">
+                <section>
+                    <h2>Ayuda</h2>
+                    <ul>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </section>
 
+                <section>
+                    <h2>Desarrolladores</h2>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">¿Quiénes somos?</a></li>
+                    </ul>
+                </section>
 
+                <section>
+                    <h2>Términos de uso</h2>
+                    <ul>
+                        <li><a href="#">Uso de la página</a></li>
+                        <li><a href="#">Ámbito de validez</a></li>
+                    </ul>
+                </section>
 
+                <section>
+                    <h2>Privacidad</h2>
+                    <ul>
+                        <li><a href="#">Declaración de Privacidad</a></li>
+                        <li><a href="#">Declaración de cookies</a></li>
+                    </ul>
+                </section>
+            </div>
 
-
-</div>
-
-<footer>
-    <div class="footer-container">
-        <div class="footer-image">
-            <img src="imgs/logoFooter.png" alt="">
+            <div class="footer-social">
+                <ul>
+                    <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
         </div>
+    </footer>
 
-        <div class="footer-links">
-            <section>
-                <h2>Ayuda</h2>
-                <ul>
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Preguntas frecuentes</a></li>
-                    <li><a href="#">Feedback</a></li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Desarrolladores</h2>
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">¿Quiénes somos?</a></li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Términos de uso</h2>
-                <ul>
-                    <li><a href="#">Uso de la página</a></li>
-                    <li><a href="#">Ámbito de validez</a></li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Privacidad</h2>
-                <ul>
-                    <li><a href="#">Declaración de Privacidad</a></li>
-                    <li><a href="#">Declaración de cookies</a></li>
-                </ul>
-            </section>
-        </div>
-
-        <div class="footer-social">
-            <ul>
-                <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
-                <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
-                <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
-            </ul>
-        </div>
-    </div>
-</footer> 
+    <script src="carrusel.js"></script>
 </body>
 
 </html>

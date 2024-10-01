@@ -190,7 +190,9 @@ body {
     background-color: #257d05;
     border-radius: 0px 0px 0px 3px;
 }
-
+.card .en-carro .rectangle-2{
+    width: 97px;
+}
 .card .rectangle-3 {
     width: 9px;
     height: 5px;
@@ -212,6 +214,7 @@ body {
     width: 35px;
     left: 0;
     font-family: "Lato-ExtraBold", Helvetica;
+    white-space: nowrap;
     font-weight: 800;
     color: #ffffff;
     font-size: 14px;
@@ -227,12 +230,12 @@ body {
 }
 
 .categoria-con-juegos {
-    width: 1316px;
+    width: 1440px;
     height: 287px;
 }
 
 .nombre-categoria {
-    margin: 10px;
+    margin-left: 156px;
     font-family: "Handjet", Helvetica;
     font-weight: 600;
     font-size: 25px;
@@ -244,27 +247,48 @@ body {
 }
 
 .carrusel-juegos {
+    width: 1440px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 38px;
 }
 
+.flecha-izq, .flecha-der {
+    width: 40;
+    height: 259;
+}
+
+.flecha-oculta {
+    visibility: hidden;
+}
 
 .juegos {
     width: 1147px;
     height: 259px;
     left: 40px;
     display: flex;
-    flex-direction: row;
-    gap: 45px;
-    /* el border radius es provisoramente, lo puse solo para ver donde esta parada la caja jeugos */
-    border-radius: 10px;
-    border: 1px solid red;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.juegos::-webkit-scrollbar{
+    display: none;
+}
+
+.juegos .card{
+    margin-top: 7px;
+    margin-right: 45px;
+    flex: 0 0 auto;
 }
 
 
-
 /* FIN carrusels por categorias */
+
+/* ini carrusel juegos destacados */
+
+/* fin carrusel juegos destacados */
 
 
 /* FOOTER */
