@@ -1,0 +1,162 @@
+body {
+    margin: 0; /* Elimina el margen por defecto */
+
+}
+
+.breadcrums{
+    margin-left: 80px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.container-principal {
+    display: flex; 
+    justify-content: center; /* Centra los contenedores */
+    gap: 8px;
+}
+
+.Juego-container {
+    position: relative; 
+    width: 755px; /* Ancho del div */
+    height: 443px; /* Alto del div */
+    margin-left: 80px;
+    margin-right: 20px;
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    overflow: hidden; 
+}
+
+.Juego-container::before {
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background-image: url('imgs/foto-web-jueguitos/carrusel-juegos/4%20en%20linea%20mario%20bross.png');
+    background-size: cover; 
+    background-position: center; 
+    opacity: 0.4; 
+    z-index: 0; 
+}
+
+.btn-jugar {
+    position: relative; 
+    padding: 10px 20px; 
+    background-color: #000; 
+    border: solid 3px var(--collection-1-verde-primario); 
+    color: #ffffff; 
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    border-radius: 10px; 
+    z-index: 1; /* Asegura que esté encima del pseudo-elemento */
+}
+
+
+.btn-jugar:hover {
+    cursor: pointer;
+    background-color: var(--collection-1-verde-secundario);
+}
+
+.opciones{
+    width: 755px;
+    height: 60px;
+    background-color: #ffffff1a;
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-compartir{
+    padding: 10px 20px;
+    background-color: #000; 
+    border: solid 3px var(--collection-1-verde-primario); 
+    color: #ffffff;
+    font-size: 14px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    border-radius: 10px;
+    margin-left: 20px;
+   
+}
+
+.btn-compartir:hover{
+    cursor: pointer;
+    background-color: var(--collection-1-verde-secundario);
+}
+
+.info-container{
+    color: #ffffff;
+    max-width: 400px; /* Ancho máximo del contenedor de información */
+    flex-grow: 1; /* Permite que el contenedor de info crezca para ocupar espacio */
+}
+
+h2{
+ display: flex;
+ justify-content: center;
+ color: var(--collection-1-verde-secundario);
+ font-size: 25px;
+}
+
+h3{
+    margin-top: 20px;
+    font-size: 16px;
+    color: var(--collection-1-verde-secundario);
+}
+
+p{
+    font-size: 14px;
+    color:#ffffff;
+}
+
+span{
+    color:var(--collection-1-verde-primario);
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.comentarios-container{
+    margin-left: 80px;
+    margin-top: 50px;
+    width: 755px;
+    
+}
+
+.escribe{
+    display: flex;
+    align-items: center;
+    height: 55px;
+    margin-bottom: 50px;
+    background-color:#ffffff1a;
+}
+
+input{
+    margin-left: 40px;
+    background-color:#ffffff1a;
+    border: none;
+    color: #ffffff;
+    padding-right: 500px;
+}
+
+
+.comentario-1, .comentario-2, .comentario-3{
+    margin-bottom: 20px;
+    height: 121px;
+    background-color:#ffffff1a;
+    padding-left: 20px;
+}
+
+.mas{
+    height: 30px;
+    background-color: #ffffff1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coment{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
