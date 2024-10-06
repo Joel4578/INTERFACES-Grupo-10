@@ -43,15 +43,17 @@ body {
 
 .btn-jugar {
     position: relative; 
-    padding: 10px 20px; 
+    padding: 0px 20px; 
     background-color: #000; 
-    border: solid 3px var(--collection-1-verde-primario); 
+    border: solid 2px var(--collection-1-verde-primario); 
     color: #ffffff; 
     font-size: 16px; 
     cursor: pointer;
     transition: background-color 0.3s; 
     border-radius: 10px; 
     z-index: 1; /* Asegura que esté encima del pseudo-elemento */
+    display: flex;
+    align-items: center;
 }
 
 
@@ -67,18 +69,27 @@ body {
     margin-left: 80px;
     display: flex;
     align-items: center;
+    justify-content:space-between;
+    margin-top: -300px;
 }
 
+.options{
+    margin-right: 20px;
+}
+
+
 .btn-compartir{
-    padding: 10px 20px;
+    padding: 5px 10px;
     background-color: #000; 
-    border: solid 3px var(--collection-1-verde-primario); 
+    border: solid 2px var(--collection-1-verde-primario); 
     color: #ffffff;
     font-size: 14px; 
     cursor: pointer; 
     transition: background-color 0.3s; 
     border-radius: 10px;
     margin-left: 20px;
+    display: flex;
+    align-items: center;
    
 }
 
@@ -117,38 +128,56 @@ span{
     margin-right: 15px;
 }
 
-.comentarios-container{
+.logo-btn{
+    margin-right: 0;
+}
+
+.comentarios-container {
     margin-left: 80px;
     margin-top: 50px;
     width: 755px;
-    
 }
 
-.escribe{
+.escribe {
     display: flex;
     align-items: center;
     height: 55px;
     margin-bottom: 50px;
-    background-color:#ffffff1a;
+    background-color: #ffffff1a;
 }
 
-input{
-    margin-left: 40px;
-    background-color:#ffffff1a;
+input {
+    margin-left: 20px;
+    background-color: #ffffff1a;
     border: none;
     color: #ffffff;
-    padding-right: 500px;
+    padding-right: 400px;
 }
 
+.img-coments {
+    margin-left: 10px;
+}
 
-.comentario-1, .comentario-2, .comentario-3{
+.comentario-1, .comentario-2, .comentario-3 {
+    display: flex; /* Cambiado a flex */
+    align-items: center; /* Alinear verticalmente */
     margin-bottom: 20px;
     height: 121px;
-    background-color:#ffffff1a;
-    padding-left: 20px;
+    background-color: #ffffff1a;
+    padding: 20px; /* Agregado padding para espacio interno */
 }
 
-.mas{
+.img-com {
+    margin-right: 15px; /* Espacio entre la imagen y el texto */
+    margin-top: -50px;
+}
+
+.comentario-info {
+    display: flex;
+    flex-direction: column; /* Colocar el tiempo y el texto en una columna */
+}
+
+.mas {
     height: 30px;
     background-color: #ffffff1a;
     display: flex;
@@ -156,7 +185,7 @@ input{
     align-items: center;
 }
 
-.coment{
+.coment {
     padding-top: 10px;
     padding-bottom: 10px;
 }
