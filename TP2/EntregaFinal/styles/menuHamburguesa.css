@@ -1,0 +1,21 @@
+
+/* menu hamburguesa */
+.menu-hamburguesa {
+    background-color: #1b1b1b;
+    position: absolute;
+    height: 100vh;
+    width: 190px;
+    display: none;
+    z-index: 10;
+    transition: .5s;
+    list-style: none; 
+
+}
+    
+.menu-hamburguesa .men-ham {
+    padding: 0;
+    margin: 20px;
+    background-color: #1b1b1b;
+    border: none;
+    cursor: pointer;
+}

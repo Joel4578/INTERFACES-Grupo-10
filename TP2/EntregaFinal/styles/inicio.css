@@ -1,0 +1,131 @@
+@import url(header.css);
+@import url(menuHamburguesa.css);
+@import url(footer.css);
+
+/* menu de inicio de sesion */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.container h2 {
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 100;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.container p {
+    color: #fff;
+}
+
+.container input {
+    display: grid;
+    width: 408.38px;
+    height: 44px;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #3d3d3d;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.container-enviar .enviar {
+    width: 125.73px;
+    background-color: #000;
+    border: solid 3px #10FF13;
+}
+
+.container-enviar .enviar:hover {
+    cursor: pointer;
+    background-color: #267D06;
+}
+
+.container-enviar {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.container-inicioSesion {
+    width: 557px;
+    height: 624px;
+    border: solid 3px #10FF13;
+    background-color: #1b1b1b;
+    border-radius: 20px;
+}
+
+.container-inicioSesion .container-principal {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 266px;
+}
+
+.container-principal {
+    margin-top: 80px;
+}
+
+.container-linea {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.linea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .container-IncioExterior {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.container .container-IncioExterior button {
+    width: 485px;
+    height: 47px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 7px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto 80%;
+    margin: 10px;
+}
+
+.container .container-IncioExterior .btn-google {
+    background-color: #fff;
+    transition: 0.5s;
+    color: #000;
+}
+
+.container .container-IncioExterior .btn-facebook {
+    background-color: #1878F1;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.container .container-IncioExterior .btn-google:hover {
+    background-color: #b5b5b5;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.container .container-IncioExterior .btn-facebook:hover {
+    background-color: #1565c6;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}

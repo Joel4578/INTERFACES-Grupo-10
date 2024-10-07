@@ -1,6 +1,5 @@
 body {
     margin: 0; /* Elimina el margen por defecto */
-
 }
 
 .breadcrums{
@@ -25,6 +24,7 @@ body {
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
     overflow: hidden; 
+    z-index: 10;
 }
 
 .Juego-container::before {
@@ -34,7 +34,7 @@ body {
     left: 0; 
     right: 0; 
     bottom: 0; 
-    background-image: url('imgs/foto-web-jueguitos/carrusel-juegos/4%20en%20linea%20mario%20bross.png');
+    background-image: url("imgs/foto-web-jueguitos/carrusel-juegos/CuatroEnLineaMario.png");
     background-size: cover; 
     background-position: center; 
     opacity: 0.4; 

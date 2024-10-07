@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesion</title>
-    <link rel="stylesheet" href="inicio.css">
+    <title>Iniciar sesion - Pixel Universe</title>
+    <link rel="stylesheet" href="styles/inicio.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 
     <div class="fondo">
+
+        <!-- MENU HAMBURGUESA ABIERTO -->
+
+        <div class="container-menu-hamburguesa-abierto">
+            <div class="menu-hamburguesa" id="menuHambAbierto">
+                <li><button id="menuHambAb" class="men-ham"><img src="imgs/Menu hamburguesa.png" alt=""></button></li>
+            </div>
+        </div>
+
+        <!-- NAV -->
         
         <header>
             <div class="nav">
                 <ul>
-                    <li id="menuHmaburguesa"><a href=""><img src="imgs/Menu hamburguesa.png" alt=""></a></li>
+                    <li><button id="menuHamb" class="men-ham"><img src="imgs/Menu hamburguesa.png" alt=""></button></li>
                     <li id="search"><input placeholder="Buscar Juego"></input></li>
                     <li id="tituloPrincipal"><a href="home.html"><img src="imgs/Logo.png" alt=""></a></li>
                     <li id="carrito"><a href=""><img src="imgs/cart-plus-svgrepo-com 1.png" alt=""></a></li>
@@ -22,6 +32,8 @@
                 </ul>
             </div>
         </header>
+
+        <!-- INICIO DE SESION -->
 
         <div class="container">
             <div class="container-inicioSesion">
@@ -47,6 +59,8 @@
     
             </div>
         </div>
+
+        <!-- FOOTER -->
 
         <footer>
             <div class="footer-container">
@@ -105,5 +119,6 @@
             </div>
         </footer>
     
+        <script src="scripts/menuHamburguesa.js"></script>
 </body>
 </html>
