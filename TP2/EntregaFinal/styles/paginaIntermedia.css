@@ -1,0 +1,41 @@
+@import url(header.css);
+@import url(menuHamburguesa.css);
+@import url(footer.css);
+
+.container-principal {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 60% auto;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.container-principal .container-zona-juego {
+    display: grid;
+    justify-content: center;
+}
+
+.container-principal .container-zona-juego .breadcrumbs {
+    height: 10px;
+}
+
+.container-principal .container-zona-juego .breadcrumbs .breadcrumb {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    border-bottom: 2px solid #d2d2d21a;
+    width: 30%;
+}
+
+.container-principal .container-zona-juego .breadcrumbs a, p {
+    color: #d2d2d21a;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.container-principal .juego {
+    width: 755px;
+    height: 443px;
+    background-color: blue;
+}
