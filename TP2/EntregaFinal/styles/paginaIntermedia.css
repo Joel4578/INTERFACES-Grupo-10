@@ -6,36 +6,73 @@
     display: grid;
     width: 100%;
     height: 100vh;
-    grid-template-columns: 60% auto;
     justify-content: center;
     /* background-color: red; */
+    margin: 10px;
 }
 
-.container-principal .container-zona-juego {
-    display: grid;
-    justify-content: center;
-}
+/* BREADCRUMB */
 
-.container-principal .container-zona-juego .breadcrumbs {
+.container-principal .breadcrumbs {
+    width: 100%;
     height: 10px;
 }
 
-.container-principal .container-zona-juego .breadcrumbs .breadcrumb {
+.container-principal .breadcrumbs .breadcrumb {
     display: flex;
     flex-direction: row;
     margin: 10px;
     border-bottom: 2px solid #d2d2d21a;
-    width: 30%;
+    width: 20%;
 }
 
-.container-principal .container-zona-juego .breadcrumbs a, p {
+.breadcrumbs a, p {
     color: #d2d2d21a;
     text-decoration: none;
     margin-left: 10px;
 }
 
-.container-principal .juego {
+/* ZONA JUEGO */
+
+.container-principal .container-principal-juego {
+    display: grid;
+    grid-template-columns: 60% auto;
+    justify-content: center;
+    /* background-color: blue; */
+}
+
+.container-principal .juego img{
     width: 755px;
     height: 443px;
-    background-color: blue;
+}
+
+/* ZONA TUTORIAL */
+
+.container-principal .container-zona-tutorial {
+    display: grid;
+    justify-content: center;
+}
+
+.container-zona-tutorial h2, h3 {
+    color: #10FF13;
+    display: flex;
+}
+
+.container-zona-tutorial p {
+    color: #fff;
+}
+
+.container-zona-tutorial h2 {
+    justify-content: center;
+    height: 10px;
+}
+
+.container-zona-tutorial .instrucciones {
+    width: 508px;
+    height: 121px;
+}
+
+.container-zona-tutorial .controles {
+    width: 508px;
+    height: 199px;
 }
