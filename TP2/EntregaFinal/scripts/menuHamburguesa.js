@@ -3,7 +3,7 @@ const menuHambAb = document.querySelector("#menuHambAbierto");
 const btnMenuHambAb = document.querySelector("menuHambAb");
 
 function abrirMenuHam(){
-    menuHambAb.style.display = "flex";
+    menuHambAb.style.display = "grid";
 }
 
 function cerrarMenuHamb() {

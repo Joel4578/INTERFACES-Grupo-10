@@ -9,7 +9,6 @@
     z-index: 10;
     transition: .5s;
     list-style: none; 
-
 }
     
 .menu-hamburguesa .men-ham {
@@ -19,3 +18,14 @@
     border: none;
     cursor: pointer;
 }
+
+.menu-hamburguesa .container-iconos .iconos {
+    margin-left: 20px;
+}
+
+.iconos .icono {
+    background-color: #1b1b1b;
+    border: none;
+    margin: 10px;
+}
+
