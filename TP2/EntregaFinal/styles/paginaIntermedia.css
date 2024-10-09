@@ -5,45 +5,51 @@
 .container-principal {
     display: grid;
     width: 100%;
-    height: 100vh;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     justify-content: center;
-    /* background-color: red; */
-    margin: 10px;
 }
 
 /* BREADCRUMB */
 
+.container-principal .container-breadcrumb {
+    display: grid;
+    /* margin-bottom: 10px; */
+}
+
 .container-principal .breadcrumbs {
     width: 100%;
-    height: 10px;
 }
 
 .container-principal .breadcrumbs .breadcrumb {
     display: flex;
     flex-direction: row;
     margin: 10px;
-    border-bottom: 2px solid #d2d2d21a;
-    width: 20%;
+    border-bottom: 2px solid #d2d2d252;
+    width: 18%;
 }
 
 .breadcrumbs a, p {
-    color: #d2d2d21a;
+    color: #d2d2d252;
     text-decoration: none;
     margin-left: 10px;
 }
 
 /* ZONA JUEGO */
 
+/* ZONA PANTALLA */
+
 .container-principal .container-principal-juego {
     display: grid;
     grid-template-columns: 60% auto;
     justify-content: center;
-    /* background-color: blue; */
 }
 
 .container-principal .juego img{
     width: 755px;
     height: 443px;
+    opacity: .7;
 }
 
 /* ZONA TUTORIAL */
@@ -54,17 +60,24 @@
 }
 
 .container-zona-tutorial h2, h3 {
-    color: #10FF13;
+    color: #267D06;
+    padding: 10px;
     display: flex;
+    font-size: 16px;
+    font-family: "Lato-Regular", Helvetica;
 }
 
 .container-zona-tutorial p {
     color: #fff;
+    font-family: "Lato-Regular", Helvetica;
+    font-size: 14px;
 }
 
 .container-zona-tutorial h2 {
     justify-content: center;
     height: 10px;
+    font-size: 18px;
+    font-family: "Lato-Regular", Helvetica;
 }
 
 .container-zona-tutorial .instrucciones {
@@ -75,4 +88,18 @@
 .container-zona-tutorial .controles {
     width: 508px;
     height: 199px;
+}
+
+.container-zona-tutorial .controles li {
+    color: #fff;
+    font-family: "Lato-Regular", Helvetica;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.container-zona-tutorial .controles .imgs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
 }
