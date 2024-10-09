@@ -46,6 +46,10 @@
     justify-content: center;
 }
 
+.container-principal .juego {
+    justify-content: center;
+}
+
 .container-principal .juego img{
     width: 755px;
     height: 443px;
