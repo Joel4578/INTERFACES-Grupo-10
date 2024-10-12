@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 :root {
     --collection-1-verde-primario: rgba(16, 255, 19, 1);
     --collection-1-blanco-transparencia: rgba(255, 255, 255, 0.6);
@@ -16,13 +17,14 @@
     --collection-1-gris-5: rgba(255, 255, 255, 0.1);
     --collection-1-color-2: var(--collection-1-gris-5);
     --collection-1-gris-cards: rgba(27, 27, 27, 1);
-  }
+}
 
 body {
     background-color: #202020;
     width: 100%;
     height: 100vh;
 }
+
 /* inicio header */
 .nav {
     padding: 10px;
@@ -83,6 +85,7 @@ body {
     justify-content: end;
     align-items: center;
 }
+
 /* fin header */
 
 /* carrusels por categorias */
@@ -190,9 +193,11 @@ body {
     background-color: #257d05;
     border-radius: 0px 0px 0px 3px;
 }
-.card .en-carro .rectangle-2{
+
+.card .en-carro .rectangle-2 {
     width: 97px;
 }
+
 .card .rectangle-3 {
     width: 9px;
     height: 5px;
@@ -224,11 +229,60 @@ body {
 
 /* FIN cards */
 
-/* INI carrusels por categorias */
-.juegos-por-categoria{
-
+/* INI Juegos destacados */
+.section-juegos-destacados .nombre-categoria{
+    margin-top: 10px;
+    margin-left: 141px;
 }
 
+.cards-flechas {
+    width: 1348px;
+    height: 321px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 47px;
+    margin-top:-28px;
+    align-items: center;
+    margin: auto;
+}
+
+.juegos-destacados {
+    width: 1158px;
+    height: 284px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 22px;
+}
+
+.juegos-destacados::-webkit-scrollbar {
+    display: none;
+}
+
+.cards-flechas .flecha-izq,
+.cards-flechas .flecha-der {
+    width: 48px;
+    height: 75px;
+}
+
+.img-destacado {
+    width: 413px;
+    height: 238px;
+}
+
+
+/* FIN Juegos destacados */
+
+/* INI carrusels por categorias */
+.juegos-por-categoria{
+    margin-top: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 43px; 
+}
 .categoria-con-juegos {
     width: 1440px;
     height: 287px;
@@ -243,7 +297,6 @@ body {
     line-height: normal;
     width: 207;
     color: var(--collection-1-verde-primario);
-
 }
 
 .carrusel-juegos {
@@ -254,7 +307,8 @@ body {
     gap: 38px;
 }
 
-.flecha-izq, .flecha-der {
+.carrusel-juegos .flecha-izq,
+.carrusel-juegos .flecha-der {
     width: 40;
     height: 259;
 }
@@ -273,31 +327,29 @@ body {
     scroll-behavior: smooth;
 }
 
-.juegos::-webkit-scrollbar{
+.juegos::-webkit-scrollbar {
     display: none;
 }
 
-.juegos .card{
+.juegos .card {
     margin-top: 7px;
     margin-right: 45px;
     flex: 0 0 auto;
 }
 
 
+
 /* FIN carrusels por categorias */
-
-/* ini carrusel juegos destacados */
-
-/* fin carrusel juegos destacados */
-
 
 /* FOOTER */
 
 /* Estilos básicos para el footer */
 footer {
     margin-top: 400px;
-    background-color: #202020; /* Color de fondo negro */
-    color: #fff; /* Texto blanco */
+    background-color: #202020;
+    /* Color de fondo negro */
+    color: #fff;
+    /* Texto blanco */
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: space-around;
@@ -316,7 +368,8 @@ footer {
 
 .footer-image {
     flex: 1;
-    max-width: 150px; /* Tamaño del logo o imagen */
+    max-width: 150px;
+    /* Tamaño del logo o imagen */
 }
 
 .footer-links {
@@ -334,7 +387,8 @@ footer {
     margin-bottom: 15px;
     text-transform: uppercase;
     font-weight: bold;
-    color: #aaa; /* Color gris claro */
+    color: #aaa;
+    /* Color gris claro */
 }
 
 .footer-links ul {
@@ -377,6 +431,7 @@ footer {
     width: 24px;
     height: 24px;
 }
+
 /* fin footer */
 
 /* Media query para dispositivos móviles */
@@ -399,6 +454,6 @@ footer {
 
     .footer-links section {
         margin-right: 0;
-        margin-bottom: 20px;
-    }
+        margin-bottom: 20px;
+    }
 }
