@@ -1,0 +1,221 @@
+@import url(header.css);
+@import url(menuHamburguesa.css);
+@import url(footer.css);
+
+.container-principal {
+    display: grid;
+    width: 100%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+}
+
+/* BREADCRUMB */
+
+.container-principal .container-breadcrumb {
+    display: grid;
+    /* margin-bottom: 10px; */
+}
+
+.container-principal .breadcrumbs {
+    width: 100%;
+}
+
+.container-principal .breadcrumbs .breadcrumb {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    border-bottom: 2px solid #d2d2d252;
+    width: 18%;
+}
+
+.breadcrumbs a, p {
+    color: #d2d2d252;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* ZONA JUEGO */
+
+/* ZONA PANTALLA */
+
+.container-principal .container-principal-juego {
+    display: grid;
+    grid-template-columns: 60% auto;
+    justify-content: center;
+}
+
+.container-principal .juego {
+    justify-content: center;
+}
+
+.container-principal .juego img{
+    width: 755px;
+    height: 443px;
+    opacity: .7;
+}
+
+.container-principal .container-titulo {
+    background-color: #3D3D3D;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    width: 755px;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.container-principal .container-titulo .boton button{
+    background-color: black;
+    color: #fff;
+    font-family: "Lato-ExtraBold", Helvetica;
+    font-weight: bold;
+    border: solid 2px #10FF13;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 140px;
+    height: 30px;
+}
+
+.container-principal .container-titulo .boton img {
+    width: 21px;
+    height: 24px;
+}
+
+.container-principal .container-titulo .botones-extra {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.container-principal .container-titulo .botones-extra img {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+}
+
+.container-principal .container-comentarios .dejar-comentario {
+    width: 755px;
+    height: 55px;
+    background-color: #3D3D3D;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 90%;
+    margin-bottom: 30px;
+}
+
+.dejar-comentario .container-img {
+    display: flex;
+    justify-content: center;
+}
+
+.dejar-comentario .container-img img {
+    width: 38px;
+    height: 36px;
+} 
+
+.dejar-comentario .container-comentario {
+    border-bottom: 2px solid #fff;
+    width: 95%;
+    margin: 5px;
+}
+
+.dejar-comentario .container-comentario p {
+    color: #fff;
+    font-size: 14px;
+    font-family: "Lato-Regular", Helvetica;
+}
+
+.container-comentarios .comentarios-ej {
+    width: 755px;
+    height: 121px;
+    background-color: #3D3D3D;
+    display: flex;
+    align-items: center;
+}
+
+.container-comentarios .comentario{
+    display: grid;
+    grid-template-columns: auto 90%;
+    padding-left: 10px;
+}
+
+.container-comentarios .comentario .container-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-comentarios .comentarios-ej .comentario img {
+    width: 38px;
+    height: 36px;
+}
+
+.container-comentarios .comentarios-ej .comentario a {
+    color: #10FF13;
+    font-size: 14px;
+    font-family: "Lato-Regular", Helvetica;
+}
+
+.comentarios-ej .comentario 
+
+.container-comentarios .comentarios-ej .comentario .container-comentario .container-informacion {
+    display: flex;
+}
+
+
+/* ZONA TUTORIAL */
+
+.container-principal .container-zona-tutorial {
+    display: grid;
+    justify-content: center;
+}
+
+.container-zona-tutorial h2, h3 {
+    color: #267D06;
+    padding: 10px;
+    display: flex;
+    font-size: 16px;
+    font-family: "Lato-Regular", Helvetica;
+}
+
+.container-zona-tutorial p {
+    color: #fff;
+    font-family: "Lato-Regular", Helvetica;
+    font-size: 14px;
+}
+
+.container-zona-tutorial h2 {
+    justify-content: center;
+    height: 10px;
+    font-size: 18px;
+    font-family: "Lato-Regular", Helvetica;
+}
+
+.container-zona-tutorial .instrucciones {
+    width: 508px;
+    height: 121px;
+}
+
+.container-zona-tutorial .controles {
+    width: 508px;
+    height: 199px;
+}
+
+.container-zona-tutorial .controles li {
+    color: #fff;
+    font-family: "Lato-Regular", Helvetica;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.container-zona-tutorial .controles .imgs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}

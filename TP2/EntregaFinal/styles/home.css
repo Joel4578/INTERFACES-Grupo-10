@@ -1,8 +1,7 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
+@import url(header.css);
+@import url(menuHamburguesa.css);
+@import url(footer.css);
 
 :root {
     --collection-1-verde-primario: rgba(16, 255, 19, 1);
@@ -19,76 +18,15 @@
     --collection-1-gris-cards: rgba(27, 27, 27, 1);
 }
 
-body {
-    background-color: #202020;
-    width: 100%;
-    height: 100vh;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
-/* inicio header */
-.nav {
-    padding: 10px;
-    background-color: #1b1b1b;
+/* ACOMODAR ESE BODY */
+body{
+    background-color: var(--collection-1-fondo);
 }
-
-.nav ul {
-    display: grid;
-    grid-template-columns: 10% 5% auto 5% 5%;
-    list-style: none;
-}
-
-.nav #menuHamburguesa {
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.nav #search input {
-    height: 32px;
-    width: 170px;
-    border-radius: 15px;
-    border: none;
-    padding: 10px;
-    padding-left: 10px;
-    background-color: #3d3d3d;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav #search .iconoSearch {
-    height: 10px;
-}
-
-.nav #search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav #tituloPrincipal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav #carrito {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding-right: 10px;
-}
-
-.nav #cuenta {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-
-/* fin header */
-
-/* carrusels por categorias */
 /* inicio cards */
 .card {
     width: 210px;
@@ -230,11 +168,6 @@ body {
 /* FIN cards */
 
 /* INI Juegos destacados */
-.section-juegos-destacados .nombre-categoria{
-    margin-top: 10px;
-    margin-left: 141px;
-}
-
 .cards-flechas {
     width: 1348px;
     height: 321px;
@@ -242,7 +175,6 @@ body {
     flex-direction: row;
     justify-content: center;
     gap: 47px;
-    margin-top:-28px;
     align-items: center;
     margin: auto;
 }
@@ -340,120 +272,3 @@ body {
 
 
 /* FIN carrusels por categorias */
-
-/* FOOTER */
-
-/* Estilos básicos para el footer */
-footer {
-    margin-top: 400px;
-    background-color: #202020;
-    /* Color de fondo negro */
-    color: #fff;
-    /* Texto blanco */
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-image {
-    flex: 1;
-    max-width: 150px;
-    /* Tamaño del logo o imagen */
-}
-
-.footer-links {
-    display: flex;
-    flex: 3;
-    justify-content: space-between;
-}
-
-.footer-links section {
-    margin-right: 40px;
-}
-
-.footer-links h2 {
-    font-size: 1em;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #aaa;
-    /* Color gris claro */
-}
-
-.footer-links ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer-links ul li {
-    margin-bottom: 10px;
-}
-
-.footer-links ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.9em;
-}
-
-.footer-links ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos para la sección de redes sociales */
-.footer-social {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.footer-social ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer-social ul li {
-    margin-left: 15px;
-}
-
-.footer-social ul li a img {
-    width: 24px;
-    height: 24px;
-}
-
-/* fin footer */
-
-/* Media query para dispositivos móviles */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    .footer-social {
-        margin-top: 20px;
-    }
-
-    .footer-links section {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-}

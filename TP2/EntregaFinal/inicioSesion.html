@@ -3,18 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesion</title>
-    <link rel="stylesheet" href="inicio.css">
+    <title>Iniciar sesion - Pixel Universe</title>
+
+    <link rel="stylesheet" href="styles/inicio.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
 
     <div class="fondo">
+
+        <!-- MENU HAMBURGUESA ABIERTO -->
+
+        <div class="container-menu-hamburguesa-abierto">
+            <div class="menu-hamburguesa" id="menuHambAbierto">
+                <div class="container-iconos">
+                <li><button id="menuHambAb" class="men-ham"><img src="imgs/Menu hamburguesa.png" alt=""></button></li>
+                
+                    <div class="iconos">
+                    <div class="container-icono"><li><button class="icono"><img src="imgs/iconos-menu-hamburguesa/icono-clasicos.png" alt=""></button><p>Clasicos</p></li></div>
+                    <div class="container-icono"><li><button class="icono"><img src="imgs/iconos-menu-hamburguesa/icono-autos.png" alt=""></button><p>Vehiculos</p></li></div>
+                    <div class="container-icono"><li><button class="icono"><img src="imgs/iconos-menu-hamburguesa/icono-accion.png" alt=""></button><p>Accion</p></li></div>
+                    <div class="container-icono"><li><button class="icono"><img src="imgs/iconos-menu-hamburguesa/icono-deporte.png" alt=""></button><p>Deporte</p></li></div>
+                    <div class="container-icono"><li><button class="icono"><img src="imgs/iconos-menu-hamburguesa/icono-estrategia.png" alt=""></button><p>Estrategia</p></li></div>
+                    <div class="container-icono"><li><button class="icono"><img src="imgs/iconos-menu-hamburguesa/icono-puzzle.png" alt=""></button><p>Puzzle</p></li></div>
+                    <div class="container-icono"><li><button class="icono"><img src="imgs/iconos-menu-hamburguesa/icono-login.png" alt=""></button><p>Cerrar sesion</p></li></div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <!-- NAV -->
         
         <header>
             <div class="nav">
                 <ul>
-                    <li id="menuHmaburguesa"><a href=""><img src="imgs/Menu hamburguesa.png" alt=""></a></li>
+                    <li><button id="menuHamb" class="men-ham"><img src="imgs/Menu hamburguesa.png" alt=""></button></li>
                     <li id="search"><input placeholder="Buscar Juego"></input></li>
                     <li id="tituloPrincipal"><a href="home.html"><img src="imgs/Logo.png" alt=""></a></li>
                     <li id="carrito"><a href=""><img src="imgs/cart-plus-svgrepo-com 1.png" alt=""></a></li>
@@ -22,6 +52,8 @@
                 </ul>
             </div>
         </header>
+
+        <!-- INICIO DE SESION -->
 
         <div class="container">
             <div class="container-inicioSesion">
@@ -48,62 +80,61 @@
             </div>
         </div>
 
+        <!-- FOOTER -->
+
         <footer>
             <div class="footer-container">
-                <!-- Imagen a la izquierda -->
                 <div class="footer-image">
-                    <img src="imgs/logoFooter.png" alt="">
+                    <img src="imgs/footer/logoFooter.png" alt="">
                 </div>
-        
-                <!-- Enlaces de ayuda -->
+    
                 <div class="footer-links">
-                    <section>
-                        <h2>Ayuda</h2>
-                        <ul>
-                            <li><a href="#">Acerca de</a></li>
-                            <li><a href="#">Preguntas frecuentes</a></li>
-                            <li><a href="#">Feedback</a></li>
-                        </ul>
-                    </section>
+                    <div class="container-footer-links">
+                        <section>
+                            <h2>Ayuda</h2>
+                            <ul>
+                                <li><a href="#">Acerca de</a></li>
+                                <li><a href="#">Preguntas frecuentes</a></li>
+                                <li><a href="#">Feedback</a></li>
+                            </ul>
+                        </section>
         
-                    <!-- Enlaces de desarrolladores -->
-                    <section>
-                        <h2>Desarrolladores</h2>
-                        <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">¿Quiénes somos?</a></li>
-                        </ul>
-                    </section>
+                        <section>
+                            <h2>Desarrolladores</h2>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">¿Quiénes somos?</a></li>
+                            </ul>
+                        </section>
         
-                    <!-- Enlaces de términos de uso -->
-                    <section>
-                        <h2>Términos de uso</h2>
-                        <ul>
-                            <li><a href="#">Uso de la página</a></li>
-                            <li><a href="#">Ámbito de validez</a></li>
-                        </ul>
-                    </section>
+                        <section>
+                            <h2>Términos de uso</h2>
+                            <ul>
+                                <li><a href="#">Uso de la página</a></li>
+                                <li><a href="#">Ámbito de validez</a></li>
+                            </ul>
+                        </section>
         
-                    <!-- Enlaces de privacidad -->
-                    <section>
-                        <h2>Privacidad</h2>
-                        <ul>
-                            <li><a href="#">Declaración de Privacidad</a></li>
-                            <li><a href="#">Declaración de cookies</a></li>
-                        </ul>
-                    </section>
+                        <section>
+                            <h2>Privacidad</h2>
+                            <ul>
+                                <li><a href="#">Declaración de Privacidad</a></li>
+                                <li><a href="#">Declaración de cookies</a></li>
+                            </ul>
+                        </section>
+                    </div>
                 </div>
-        
-                <!-- Redes sociales -->
+    
                 <div class="footer-social">
                     <ul>
-                        <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
-                        <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
-                        <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="imgs/footer/icono-facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="imgs/footer/icono-x.png" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="imgs/footer/icono-instagram.png" alt="Instagram"></a></li>
                     </ul>
                 </div>
             </div>
-        </footer>
+                </footer>
     
+        <script src="scripts/menuHamburguesa.js"></script>
 </body>
 </html>

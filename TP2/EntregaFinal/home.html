@@ -4,34 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Inicio - Pixel Universe</title>
+    
+    <link rel="stylesheet" href="styles/home.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
+    <div class="fondo">
+
+    <!-- MENU HAMBURGUESA ABIERTO -->
+
+    <div class="container-menu-hamburguesa-abierto">
+            <div class="menu-hamburguesa" id="menuHambAbierto">
+                <div class="container-iconos">
+                <li><button id="menuHambAb" class="men-ham"><img src="imgs/Menu hamburguesa.png" alt=""></button></li>
+                
+                    <div class="iconos">
+                    <div class="container-icono"><li><button class="icono"><img src="imgs/iconos-menu-hamburguesa/icono-clasicos.png" alt=""></button><p>Clasicos</p></li></div>
+                    <div class="container-icono"><li><button class="icono"><img src="imgs/iconos-menu-hamburguesa/icono-autos.png" alt=""></button><p>Vehiculos</p></li></div>
+                    <div class="container-icono"><li><button class="icono"><img src="imgs/iconos-menu-hamburguesa/icono-accion.png" alt=""></button><p>Accion</p></li></div>
+                    <div class="container-icono"><li><button class="icono"><img src="imgs/iconos-menu-hamburguesa/icono-deporte.png" alt=""></button><p>Deporte</p></li></div>
+                    <div class="container-icono"><li><button class="icono"><img src="imgs/iconos-menu-hamburguesa/icono-estrategia.png" alt=""></button><p>Estrategia</p></li></div>
+                    <div class="container-icono"><li><button class="icono"><img src="imgs/iconos-menu-hamburguesa/icono-puzzle.png" alt=""></button><p>Puzzle</p></li></div>
+                    <div class="container-icono"><li><button class="icono"><img src="imgs/iconos-menu-hamburguesa/icono-login.png" alt=""></button><p>Cerrar sesion</p></li></div>
+                    </div>
+                    
+                </div>
+
+            </div>
+    </div>
+
+    <!-- NAV -->
+
     <header>
         <div class="nav">
             <ul>
-                <li id="menuHmaburguesa"><a href=""><img src="imgs/Menu hamburguesa.png" alt=""></a></li>
+                <li><button id="menuHamb" class="men-ham"><img src="imgs/Menu hamburguesa.png" alt=""></button></li>
                 <li id="search"><input placeholder="Buscar Juego"></input></li>
                 <li id="tituloPrincipal"><a href="home.html"><img src="imgs/Logo.png" alt=""></a></li>
                 <li id="carrito"><a href=""><img src="imgs/cart-plus-svgrepo-com 1.png" alt=""></a></li>
-                <li id="cuenta"><a href="inicioSesion.html"><img src="imgs/login.png" alt=""></a></li>
+                <li id="cuenta"><a href="registro.html"><img src="imgs/login.png" alt=""></a></li>
             </ul>
         </div>
     </header>
 
     <!-- Carrusel Principal -->
+
     <section class="section-juegos-destacados">
         
         <p class="nombre-categoria">Juegos Destacados</p>
@@ -57,6 +82,222 @@
 
     </section> 
 
+    <!-- CARRUSEL -->
+
+    <div class="container-carrusel">
+        <section class="juegos-por-categoria">
+            <!-- Componente carrusel -->
+            <div class="categoria-con-juegos">
+    
+                <h2 class="nombre-categoria">Juegos Accion</h2>
+    
+                <div class="carrusel-juegos">
+                    <img class="flecha-izq" id="scroll-btn-izquierda" src="imgs/Flecha.svg" />
+    
+                    <div class="juegos">
+    
+                        <div class="card">
+                            <div class="car">
+                                <div class="overlap-group">
+                                        <a href="paginaIntermedia.html"><img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/Mortalcompat.jfif" /></a>
+                                    <div class="card-pie">
+                                        <div class="extra-bold card-titulo-juego">
+                                            <h2 class="h-px">Mortal Kom...</h2>
+                                        </div>
+                                        <div class="card-estado">
+                                            <p>FREE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div-wrapper">
+                                <div class="div-wrapper">
+                                    <div class="rectangle-2"></div>
+                                    <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" />
+                                    </div>
+                                </div>
+                                <div class="p">
+                                    <div class="p-px">FREE</div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <div class="car">
+                                <div class="overlap-group">
+                                    <a href="paginaIntermedia.html"><img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/doom.jfif" /></a>
+                                    <div class="card-pie">
+                                        <div class="extra-bold card-titulo-juego">
+                                            <h2 class="h-px">Doom</h2>
+                                        </div>
+                                        <div class="card-estado">
+                                            <p>$500</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div-wrapper">
+                                <div class="div-wrapper">
+                                    <div class="rectangle-2"></div>
+                                    <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" />
+                                    </div>
+                                </div>
+                                <div class="p">
+                                    <div class="p-px">PAGO</div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <div class="car">
+                                <div class="overlap-group">
+                                    <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/good of wars.jfif" />
+                                    <div class="card-pie">
+                                        <div class="extra-bold card-titulo-juego">
+                                            <h2 class="h-px">Good of Wars</h2>
+                                        </div>
+                                        <div class="card-estado">
+                                            <p>en tu biblioteca</p>
+                                            <img class="card-img-tilde" src="imgs/tilde.svg"
+                                                alt="este juego esta en tu biblioteca">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <div class="car">
+                                <div class="overlap-group">
+                                    <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/descarga.jfif" />
+                                    <div class="card-pie">
+                                        <div class="extra-bold card-titulo-juego">
+                                            <h2 class="h-px">Jetpack Joyr...</h2>
+                                        </div>
+                                        <div class="card-estado">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div-wrapper en-carro">
+                                <div class="div-wrapper">
+                                    <div class="rectangle-2"></div>
+                                    <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" />
+                                    </div>
+                                </div>
+                                <div class="p">
+                                    <p class="p-px">EN CARRO</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <div class="car">
+                                <div class="overlap-group">
+                                    <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/half life.jfif" />
+                                    <div class="card-pie">
+                                        <div class="extra-bold card-titulo-juego">
+                                            <h2 class="h-px">Half Life</h2>
+                                        </div>
+                                        <div class="card-estado">
+                                            <p>en tu biblioteca</p>
+                                            <img class="card-img-tilde" src="imgs/tilde.svg"
+                                                alt="este juego esta en tu biblioteca">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <div class="car">
+                                <div class="overlap-group">
+                                    <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/comando 1.jfif" />
+                                    <div class="card-pie">
+                                        <div class="extra-bold card-titulo-juego">
+                                            <h2 class="h-px">Comando 1</h2>
+                                        </div>
+                                        <div class="card-estado">
+                                            <p>FREE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div-wrapper">
+                                <div class="div-wrapper">
+                                    <div class="rectangle-2"></div>
+                                    <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" />
+                                    </div>
+                                </div>
+                                <div class="p">
+                                    <div class="p-px">FREE</div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <div class="car">
+                                <div class="overlap-group">
+                                    <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/call-duty-wwii.webp" />
+                                    <div class="card-pie">
+                                        <div class="extra-bold card-titulo-juego">
+                                            <h2 class="h-px">Call of Duty</h2>
+                                        </div>
+                                        <div class="card-estado">
+                                            <p>$500</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div-wrapper">
+                                <div class="div-wrapper">
+                                    <div class="rectangle-2"></div>
+                                    <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" />
+                                    </div>
+                                </div>
+                                <div class="p">
+                                    <div class="p-px">PAGO</div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <div class="car">
+                                <div class="overlap-group">
+                                    <img class="card-img-juego" src="imgs/foto-web-jueguitos/Accion/Fighters 2.png" />
+                                    <div class="card-pie">
+                                        <div class="extra-bold card-titulo-juego">
+                                            <h2 class="h-px">Fighters 2</h2>
+                                        </div>
+                                        <div class="card-estado">
+                                            <p>FREE</p>
+                                            <img class="card-img-tilde" src="imgs/tilde.svg"
+                                                alt="este juego esta en tu biblioteca">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div-wrapper">
+                                <div class="div-wrapper">
+                                    <div class="rectangle-2"></div>
+                                    <div class="rectangle-wrapper"><img class="rectangle-3" src="img/rectangle-135.svg" />
+                                    </div>
+                                </div>
+                                <div class="p">
+                                    <div class="p-px">FREE</div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <img class="flecha-der" id="scroll-btn-derecha" src="imgs/flechaDerecha.svg" />
+                </div>
+    
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
     <section  class="juegos-por-categoria">
         <!-- Componente carrusel -->
         <div class="categoria-con-juegos">
@@ -990,54 +1231,59 @@
     <footer>
         <div class="footer-container">
             <div class="footer-image">
-                <img src="imgs/logoFooter.png" alt="">
+                <img src="imgs/footer/logoFooter.png" alt="">
             </div>
 
             <div class="footer-links">
-                <section>
-                    <h2>Ayuda</h2>
-                    <ul>
-                        <li><a href="#">Acerca de</a></li>
-                        <li><a href="#">Preguntas frecuentes</a></li>
-                        <li><a href="#">Feedback</a></li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Desarrolladores</h2>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">¿Quiénes somos?</a></li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Términos de uso</h2>
-                    <ul>
-                        <li><a href="#">Uso de la página</a></li>
-                        <li><a href="#">Ámbito de validez</a></li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Privacidad</h2>
-                    <ul>
-                        <li><a href="#">Declaración de Privacidad</a></li>
-                        <li><a href="#">Declaración de cookies</a></li>
-                    </ul>
-                </section>
+                <div class="container-footer-links">
+                    <section>
+                        <h2>Ayuda</h2>
+                        <ul>
+                            <li><a href="#">Acerca de</a></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
+                    </section>
+    
+                    <section>
+                        <h2>Desarrolladores</h2>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">¿Quiénes somos?</a></li>
+                        </ul>
+                    </section>
+    
+                    <section>
+                        <h2>Términos de uso</h2>
+                        <ul>
+                            <li><a href="#">Uso de la página</a></li>
+                            <li><a href="#">Ámbito de validez</a></li>
+                        </ul>
+                    </section>
+    
+                    <section>
+                        <h2>Privacidad</h2>
+                        <ul>
+                            <li><a href="#">Declaración de Privacidad</a></li>
+                            <li><a href="#">Declaración de cookies</a></li>
+                        </ul>
+                    </section>
+                </div>
             </div>
 
             <div class="footer-social">
                 <ul>
-                    <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
-                    <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="imgs/footer/icono-facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="imgs/footer/icono-x.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="imgs/footer/icono-instagram.png" alt="Instagram"></a></li>
                 </ul>
             </div>
         </div>
-    </footer>
+            </footer>
+    </div>
 
+    <script src="scripts/carrusel.js"></script>
+    <script src="scripts/menuHamburguesa.js"></script>
 </body>
 
 </html>
