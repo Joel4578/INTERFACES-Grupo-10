@@ -2,26 +2,6 @@
 @import url(menuHamburguesa.css);
 @import url(footer.css);
 
-<<<<<<< HEAD
-:root {
-    --collection-1-verde-primario: rgba(16, 255, 19, 1);
-    --collection-1-blanco-transparencia: rgba(255, 255, 255, 0.6);
-    --collection-1-blanco: rgba(255, 255, 255, 1);
-    --collection-1-verde-secundario: rgba(38, 125, 6, 1);
-    --collection-1-fondo: rgba(32, 32, 32, 1);
-    --collection-1-violeta-principal: rgba(102, 5, 248, 1);
-    --collection-1-violeta5: rgba(45, 3, 109, 1);
-    --collection-1-violeta-contraste: rgba(85, 7, 202, 1);
-    --collection-1-color: rgba(61, 61, 61, 1);
-    --collection-1-gris-5: rgba(255, 255, 255, 0.1);
-    --collection-1-color-2: var(--collection-1-gris-5);
-    --collection-1-gris-cards: rgba(27, 27, 27, 1);
-}
-.container-juego {
-    display: flex; 
-    justify-content: center; /* Centra los contenedores */
-    gap: 8px;
-=======
 .container-principal {
     display: grid;
     width: 100%;
@@ -29,7 +9,6 @@
     margin-left: 10px;
     margin-right: 10px;
     justify-content: center;
->>>>>>> 4b44d3ae77b0d7a55845c77a0c803e932fa4b409
 }
 
 /* BREADCRUMB */
@@ -38,145 +17,6 @@
     display: grid;
 }
 
-<<<<<<< HEAD
-.container-juego::before {
-    content: ""; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    background-image: url("imgs/foto-web-jueguitos/carrusel-juegos/CuatroEnLineaMario.png");
-    background-size: cover; 
-    background-position: center; 
-    opacity: 0.4; 
-    z-index: 0; 
-}
-
-.btn-jugar {
-    position: relative; 
-    padding: 10px 20px; 
-    background-color: #000; 
-    border: solid 2px var(--collection-1-verde-primario); 
-    color: #ffffff; 
-    font-size: 16px; 
-    cursor: pointer;
-    transition: all 0.3s ease; 
-    border-radius: 10px; 
-    z-index: 1; 
-    display: flex;
-    align-items: center;
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Sombra suave */
-}
-
-.btn-jugar:hover {
-    background: linear-gradient(45deg, var(--collection-1-verde-primario), var(--collection-1-verde-secundario)); /* Gradiente */
-    color: #000; /* Cambia el color del texto */
-    border: solid 2px var(--collection-1-verde-secundario);
-    transform: scale(1.1); /* Aumento de tamaño */
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
-}
-
-.btn-jugar:active {
-    transform: scale(1.05); /* Reduce ligeramente el tamaño al hacer clic */
-}
-
-
-.opciones{
-    width: 755px;
-    height: 60px;
-    background-color: #ffffff1a;
-    margin-left: 80px;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    margin-top: -300px;
-}
-
-.options{
-    margin-right: 20px;
-}
-
-
-.btn-compartir {
-    padding: 5px 10px;
-    background-color: #000; 
-    border: solid 2px var(--collection-1-verde-primario); 
-    color: #ffffff;
-    font-size: 14px; 
-    cursor: pointer; 
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    border-radius: 10px;
-    margin-left: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.btn-compartir:hover {
-    background-color: var(--collection-1-verde-secundario);
-    transform: translateY(-3px); /* Movimiento hacia arriba */
-    box-shadow: 0 0 10px var(--collection-1-verde-secundario), 
-                0 0 20px var(--collection-1-verde-secundario); /* Resplandor */
-}
-
-.info-container{
-    color: #ffffff;
-    max-width: 400px; /* Ancho máximo del contenedor de información */
-    flex-grow: 1; /* Permite que el contenedor de info crezca para ocupar espacio */
-}
-
-h2{
- display: flex;
- justify-content: center;
- color: var(--collection-1-verde-secundario);
- font-size: 25px;
-}
-
-h3{
-    margin-top: 20px;
-    font-size: 16px;
-    color: var(--collection-1-verde-secundario);
-}
-
-p{
-    font-size: 14px;
-    color:#ffffff;
-}
-
-span{
-    color:var(--collection-1-verde-primario);
-    font-weight: bold;
-    margin-right: 15px;
-}
-
-.logo-btn{
-    margin-right: 0;
-}
-
-.comentarios-container {
-    margin-left: 80px;
-    margin-top: 50px;
-    width: 755px;
-}
-
-.escribe {
-    display: flex;
-    align-items: center;
-    height: 55px;
-    margin-bottom: 50px;
-    background-color: #ffffff1a;
-}
-
-input {
-    margin-left: 20px;
-    background-color: #ffffff1a;
-    border: none;
-    color: #ffffff;
-    padding-right: 400px;
-}
-
-.img-coments {
-=======
 .container-principal .breadcrumbs {
     width: 100%;
 }
@@ -192,7 +32,6 @@ input {
 .breadcrumbs a, p {
     color: #d2d2d252;
     text-decoration: none;
->>>>>>> 4b44d3ae77b0d7a55845c77a0c803e932fa4b409
     margin-left: 10px;
 }
 

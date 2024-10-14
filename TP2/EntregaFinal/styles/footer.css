@@ -1,69 +1,5 @@
 /* FOOTER */
-footer {
-    background-color: #202020; /* Color de fondo oscuro */
-    color: #fff; /* Texto blanco */
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column; /* Cambiar a columna para móviles */
-    align-items: center; /* Centrar horizontalmente */
-    padding: 20px; /* Espaciado interno */
-}
 
-.footer-container {
-    display: flex;
-    flex-direction: column; /* Cambiar a columna */
-    align-items: center; /* Centrar contenido */
-    width: 100%; /* Asegurar que ocupe el ancho completo */
-}
-
-.footer-image {
-    margin-bottom: 20px; /* Espacio entre logo y enlaces */
-}
-
-.footer-links {
-    display: flex;
-    flex-direction: column; /* Cambiar a columna */
-    align-items: center; /* Centrar contenido */
-    justify-content: center;
-}
-
-.footer-links h2 {
-    font-size: 16px;
-    font-family: "Lato-Regular", Helvetica;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center; /* Centrar el texto */
-}
-
-.footer-links li, a {
-    list-style: none;
-    text-decoration: none;
-    color: #fff;
-    margin-bottom: 5px; /* Espaciado entre enlaces */
-    font-size: 14px; /* Tamaño de fuente para los enlaces */
-    text-align: center; /* Centrar el texto */
-}
-
-.footer-social {
-    display: flex; /* Cambiar a flex para mejor alineación */
-    justify-content: center; /* Centrar horizontalmente */
-    margin-top: 20px; /* Espaciado superior */
-}
-
-.footer-social ul {
-    display: flex; /* Mantener flex para los íconos sociales */
-    align-items: center; /* Centrar verticalmente */
-}
-
-.footer-social li {
-    list-style: none;
-}
-
-.footer-social img {
-    width: 24px; /* Ajustar el tamaño de los íconos */
-    height: 24px; /* Mantener proporción */
-    margin: 5px; /* Espaciado entre íconos */
-}
 /* Estilos básicos para el footer */
 footer {
     background-color: #202020; /* Color de fondo negro */
@@ -75,10 +11,15 @@ footer {
     align-self: flex-end;
 }
 
-.footer-container{
-    display: flex;
+.footer-container {
+    display: grid;
+    grid-template-columns: 25% 60% auto;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 232px;
+    margin-bottom: 10px;
+    /* position: fixed; */
 }
 
 .footer-links {
@@ -126,17 +67,4 @@ footer {
     margin: 10px;
     display: grid;
     justify-content: center;
-}
-
-@media(min-width : 600px) {
-    .footer-container {
-        display: grid;
-        grid-template-columns: 25% 60% auto;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        height: 232px;
-        margin-bottom: 10px;
-        /* position: fixed; */
-    }
 }
