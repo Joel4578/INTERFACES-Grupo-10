@@ -1,3 +1,4 @@
+
 @import url(header.css);
 @import url(menuHamburguesa.css);
 @import url(footer.css);
@@ -15,15 +16,17 @@
     --collection-1-gris-5: rgba(255, 255, 255, 0.1);
     --collection-1-color-2: var(--collection-1-gris-5);
     --collection-1-gris-cards: rgba(27, 27, 27, 1);
-  }
-
-/* carrusels por categorias */
-
-.container-carrusel {
-    display: grid;
-    justify-content: center;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* ACOMODAR ESE BODY */
+body{
+    background-color: var(--collection-1-fondo);
+}
 /* inicio cards */
 .card {
     width: 210px;
@@ -128,9 +131,11 @@
     background-color: #257d05;
     border-radius: 0px 0px 0px 3px;
 }
-.card .en-carro .rectangle-2{
+
+.card .en-carro .rectangle-2 {
     width: 97px;
 }
+
 .card .rectangle-3 {
     width: 9px;
     height: 5px;
@@ -162,11 +167,89 @@
 
 /* FIN cards */
 
-/* INI carrusels por categorias */
-.juegos-por-categoria{
-
+/* INI Juegos destacados */
+.cards-flechas {
+    width: 1348px;
+    height: 321px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 47px;
+    align-items: center;
+    margin: auto;
 }
 
+.juegos-destacados {
+    width: 1158px;
+    height: 284px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 26px;
+}
+
+.juegos-destacados::-webkit-scrollbar {
+    display: none;
+}
+
+.cards-flechas .flecha-izq,
+.cards-flechas .flecha-der {
+    width: 48px;
+    height: 75px;
+}
+
+.img-destacado {
+    width: 413px;
+    height: 238px;
+}
+
+.circulitos {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    height: 17px;
+}
+.circulo {
+    width: 81px;
+    height: 17px;
+    left: 32px;
+    background-color: var(--collection-1-color);
+    width: 17px;
+    height: 17px;
+    margin: 0 5px; 
+    border-radius: 50%;
+}
+
+.posicion-circulo {
+    background-color: var(--collection-1-violeta-principal);
+}
+/* FIN Juegos destacados */
+
+/* INI carrusels por categorias */
+
+.juegos .card {
+    margin-top: 7px;
+    margin-right: 45px;
+    flex: 0 0 auto;
+    opacity: 0.4;
+    transform: scale(0.90);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.juegos .card.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.juegos-por-categoria{
+    margin-top: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 43px; 
+}
 .categoria-con-juegos {
     width: 1440px;
     height: 287px;
@@ -181,7 +264,6 @@
     line-height: normal;
     width: 207;
     color: var(--collection-1-verde-primario);
-
 }
 
 .carrusel-juegos {
@@ -192,7 +274,8 @@
     gap: 38px;
 }
 
-.flecha-izq, .flecha-der {
+.carrusel-juegos .flecha-izq,
+.carrusel-juegos .flecha-der {
     width: 40;
     height: 259;
 }
@@ -211,21 +294,14 @@
     scroll-behavior: smooth;
 }
 
-.juegos::-webkit-scrollbar{
+.juegos::-webkit-scrollbar {
     display: none;
 }
 
-.juegos .card{
+.juegos .card {
     margin-top: 7px;
     margin-right: 45px;
     flex: 0 0 auto;
 }
 
-
 /* FIN carrusels por categorias */
-
-/* ini carrusel juegos destacados */
-
-/* fin carrusel juegos destacados */
-
-
