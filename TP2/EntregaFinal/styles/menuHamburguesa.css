@@ -41,7 +41,7 @@
     align-self: start;
 }
 
-.menu-hamburguesa .container-iconos .iconos .container-icono p {
+.menu-hamburguesa .container-iconos .iconos .container-icono a {
     color: #10FF13;
     margin-left: 3px;
     justify-content: center;
