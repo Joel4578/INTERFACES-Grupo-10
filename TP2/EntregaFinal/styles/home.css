@@ -137,12 +137,12 @@ body{
     box-shadow: 0px -1.8px 4px 0.5px var(--collection-1-violeta-principal); /* Sombra */
 }
 
-
 .card:hover .rectangle-wrapper {
     border-left: 1px solid var(--collection-1-violeta-principal);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: -1.2px 2px 4px 0px var(--collection-1-violeta-principal);
 }
+
 .card .rectangle-wrapper {
     position: absolute;
     width: 9px;
@@ -198,6 +198,7 @@ body{
     gap: 47px;
     align-items: center;
     margin: auto;
+    cursor: pointer;
 }
 
 .juegos-destacados {
@@ -299,6 +300,7 @@ body{
 .carrusel-juegos .flecha-der {
     width: 40;
     height: 259;
+    cursor: pointer;
 }
 
 .flecha-oculta {
