@@ -189,6 +189,10 @@ body{
 /* FIN cards */
 
 /* INI Juegos destacados */
+.section-juegos-destacados .titulo-destacado {
+    margin-top: 5px;
+    margin-left: 144    px;
+}
 .cards-flechas {
     width: 1348px;
     height: 321px;
@@ -206,7 +210,7 @@ body{
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    overflow-x: auto;
+    overflow-x: scroll; 
     scroll-behavior: smooth;
     gap: 26px;
 }
@@ -215,15 +219,10 @@ body{
     display: none;
 }
 
-.cards-flechas .flecha-izq,
-.cards-flechas .flecha-der {
-    width: 48px;
-    height: 75px;
-}
-
 .img-destacado {
-    width: 413px;
+    width: 413px; 
     height: 238px;
+    flex-shrink: 0;
 }
 
 .circulitos {
@@ -232,11 +231,10 @@ body{
     align-items: center; 
     width: 100%;
     height: 17px;
+    margin-top: 10px;
 }
+
 .circulo {
-    width: 81px;
-    height: 17px;
-    left: 32px;
     background-color: var(--collection-1-color);
     width: 17px;
     height: 17px;
@@ -247,7 +245,12 @@ body{
 .posicion-circulo {
     background-color: var(--collection-1-violeta-principal);
 }
-/* FIN Juegos destacados */
+
+.cards-flechas .flecha-izq,
+.cards-flechas .flecha-der {
+    width: 48px;
+    height: 75px;
+}
 
 /* INI carrusels por categorias */
 
@@ -326,3 +329,24 @@ body{
 }
 
 /* FIN carrusels por categorias */
+
+
+/* responsive */
+@media(max-width:768px){
+    .cards-flechas {
+        width: 100% ;
+    }
+    
+.carrusel-juegos {
+    width: 100%;
+}
+.juegos {
+    width: 600px;
+}
+.circulitos{
+    display: none;
+}
+.nombre-categoria{
+    margin-left: 96px;
+}
+}
