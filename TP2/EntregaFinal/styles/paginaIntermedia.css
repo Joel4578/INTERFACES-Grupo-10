@@ -2,7 +2,11 @@
 @import url(menuHamburguesa.css);
 @import url(footer.css);
 
-<<<<<<< HEAD
+
+body{
+   background-color: var(--collection-1-fondo); 
+}
+
 :root {
     --collection-1-verde-primario: rgba(16, 255, 19, 1);
     --collection-1-blanco-transparencia: rgba(255, 255, 255, 0.6);
@@ -17,11 +21,7 @@
     --collection-1-color-2: var(--collection-1-gris-5);
     --collection-1-gris-cards: rgba(27, 27, 27, 1);
 }
-.container-juego {
-    display: flex; 
-    justify-content: center; /* Centra los contenedores */
-    gap: 8px;
-=======
+
 .container-principal {
     display: grid;
     width: 100%;
@@ -29,7 +29,6 @@
     margin-left: 10px;
     margin-right: 10px;
     justify-content: center;
->>>>>>> 4b44d3ae77b0d7a55845c77a0c803e932fa4b409
 }
 
 /* BREADCRUMB */
@@ -38,19 +37,42 @@
     display: grid;
 }
 
-<<<<<<< HEAD
-.container-juego::before {
-    content: ""; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    background-image: url("imgs/foto-web-jueguitos/carrusel-juegos/CuatroEnLineaMario.png");
-    background-size: cover; 
-    background-position: center; 
-    opacity: 0.4; 
-    z-index: 0; 
+.container-principal .breadcrumbs {
+    width: 100%;
+}
+
+.container-principal .breadcrumbs .breadcrumb {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    border-bottom: 2px solid #d2d2d252;
+    width: 18%;
+}
+
+.breadcrumbs a, p {
+    color: #d2d2d252;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* ZONA JUEGO */
+
+/* ZONA PANTALLA */
+
+.container-principal .container-principal-juego {
+    display: grid;
+    grid-template-columns: 65% auto;
+    justify-content: center;
+}
+
+.container-principal .container-titulo {
+    background-color: #3D3D3D;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    width: 755px;
+    height: 60px;
+    margin-bottom: 30px;
 }
 
 .btn-jugar {
@@ -69,6 +91,37 @@
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Sombra suave */
 }
 
+.container-principal {
+   margin-left: 100px;
+}
+
+.Juego-container {
+    position: relative; 
+    width: 755px; /* Ancho del div */
+    height: 443px; /* Alto del div */
+    margin-right: 20px;
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    overflow: hidden; 
+    z-index: 10;
+}
+
+.container-juego::before { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background-image: url("imgs/foto-web-jueguitos/carrusel-juegos/CuatroEnLineaMario.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    opacity: 0.4; 
+    z-index: 0; 
+}
+
+
 .btn-jugar:hover {
     background: linear-gradient(45deg, var(--collection-1-verde-primario), var(--collection-1-verde-secundario)); /* Gradiente */
     color: #000; /* Cambia el color del texto */
@@ -82,22 +135,17 @@
 }
 
 
-.opciones{
-    width: 755px;
-    height: 60px;
-    background-color: #ffffff1a;
-    margin-left: 80px;
+.container-principal .container-titulo .botones-extra {
     display: flex;
+    justify-content: end;
     align-items: center;
-    justify-content:space-between;
-    margin-top: -300px;
 }
 
-.options{
-    margin-right: 20px;
+.container-principal .container-titulo .botones-extra img {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
 }
-
-
 .btn-compartir {
     padding: 5px 10px;
     background-color: #000; 
@@ -117,145 +165,6 @@
     transform: translateY(-3px); /* Movimiento hacia arriba */
     box-shadow: 0 0 10px var(--collection-1-verde-secundario), 
                 0 0 20px var(--collection-1-verde-secundario); /* Resplandor */
-}
-
-.info-container{
-    color: #ffffff;
-    max-width: 400px; /* Ancho máximo del contenedor de información */
-    flex-grow: 1; /* Permite que el contenedor de info crezca para ocupar espacio */
-}
-
-h2{
- display: flex;
- justify-content: center;
- color: var(--collection-1-verde-secundario);
- font-size: 25px;
-}
-
-h3{
-    margin-top: 20px;
-    font-size: 16px;
-    color: var(--collection-1-verde-secundario);
-}
-
-p{
-    font-size: 14px;
-    color:#ffffff;
-}
-
-span{
-    color:var(--collection-1-verde-primario);
-    font-weight: bold;
-    margin-right: 15px;
-}
-
-.logo-btn{
-    margin-right: 0;
-}
-
-.comentarios-container {
-    margin-left: 80px;
-    margin-top: 50px;
-    width: 755px;
-}
-
-.escribe {
-    display: flex;
-    align-items: center;
-    height: 55px;
-    margin-bottom: 50px;
-    background-color: #ffffff1a;
-}
-
-input {
-    margin-left: 20px;
-    background-color: #ffffff1a;
-    border: none;
-    color: #ffffff;
-    padding-right: 400px;
-}
-
-.img-coments {
-=======
-.container-principal .breadcrumbs {
-    width: 100%;
-}
-
-.container-principal .breadcrumbs .breadcrumb {
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-    border-bottom: 2px solid #d2d2d252;
-    width: 18%;
-}
-
-.breadcrumbs a, p {
-    color: #d2d2d252;
-    text-decoration: none;
->>>>>>> 4b44d3ae77b0d7a55845c77a0c803e932fa4b409
-    margin-left: 10px;
-}
-
-/* ZONA JUEGO */
-
-/* ZONA PANTALLA */
-
-.container-principal .container-principal-juego {
-    display: grid;
-    grid-template-columns: 60% auto;
-    justify-content: center;
-}
-
-.container-principal .juego {
-    justify-content: center;
-}
-
-.container-principal .juego img{
-    width: 755px;
-    height: 443px;
-    opacity: .7;
-}
-
-.container-principal .container-titulo {
-    background-color: #3D3D3D;
-    display: grid;
-    align-items: center;
-    grid-template-columns: auto auto;
-    width: 755px;
-    height: 60px;
-    margin-bottom: 30px;
-}
-
-.container-principal .container-titulo .boton button{
-    background-color: black;
-    color: #fff;
-    font-family: "Lato-ExtraBold", Helvetica;
-    font-weight: bold;
-    border: solid 2px #10FF13;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    width: 140px;
-    height: 30px;
-}
-
-.container-principal .container-titulo .boton img {
-    width: 21px;
-    height: 24px;
-}
-
-.container-principal .container-titulo .botones-extra {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-
-.container-principal .container-titulo .botones-extra img {
-    width: 35px;
-    height: 35px;
-    margin: 10px;
 }
 
 /* ZONA COMENTARIOS */

@@ -66,6 +66,37 @@
     padding-top: 10px;
 }
 
+.container-enviar .enviar {
+    width: 125.73px;
+    background-color: #000;
+    border: solid 3px #10FF13;
+    color: #ffffff; /* Añadido para un mejor contraste */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    position: relative; /* Para el efecto del borde */
+}
+
+.container-enviar .enviar:hover {
+    cursor: pointer;
+    background-color: #267D06;
+    color: #10FF13; /* Cambia el color del texto al color del borde */
+}
+
+.container-enviar .enviar::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border: solid 3px transparent; /* Inicialmente transparente */
+    transition: border-color 0.3s;
+}
+
+.container-enviar .enviar:hover::before {
+    border-color: #10FF13; /* Aparece el borde verde al hacer hover */
+}
+
+
 .container-inicioSesion {
     width: 557px;
     height: 624px;
@@ -147,4 +178,28 @@
     background-color: #1565c6;
     transition: 0.5s ease-in;
     cursor: pointer;
+}
+
+/*mensajes de error*/
+
+.content {
+    text-align: center;
+}
+
+.input-container {
+    position: relative; /* Necesario para posicionar el icono */
+}
+
+.error-icon {
+    color: red;
+    position: absolute; /* Posicionamiento absoluto */
+    right: 10px; /* Ajusta según necesites */
+    top: 50%; /* Centrado vertical */
+    transform: translateY(-50%); /* Ajusta para centrar realmente */
+    display: none; /* Inicialmente oculto */
+    font-size: 16px; /* Ajusta el tamaño del icono */
+    
+}
+.input-error {
+    border: 1px solid red; /* Cambia el borde a rojo */
 }

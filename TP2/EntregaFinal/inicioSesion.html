@@ -58,28 +58,36 @@
 
         <div class="container">
             <div class="container-inicioSesion">
-
                 <div class="container-principal">
-                    <h2>Iniciar sesion</h2>
-                    <input type="text" placeholder="Correo electronico">
-                    <input type="text" placeholder="Contraseña">
-                    <p>¿olvidaste tu contraseña?</p>
+                    <h2>Iniciar sesión</h2>
+                    <div class="input-container">
+                        <input type="text" id="email" placeholder="Correo electrónico">
+                        <span class="error-icon" id="emailError" style="display: none;">✖</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" id="password" placeholder="Contraseña">
+                        <span class="error-icon" id="passwordError" style="display: none;">✖</span>
+                    </div>
+                    <p>¿Olvidaste tu contraseña?</p>
                     <div class="container-enviar">
                         <button class="enviar"><a href="home.html">Login</a></button>
                     </div>
                 </div>
-
+        
                 <div class="container-linea">
                     <img class="linea" src="imgs/linea.png" alt="">
                 </div>
-    
+        
                 <div class="container-IncioExterior">
                     <button class="btn-google"><img src="imgs/google.png" alt="">Google</button>
                     <button class="btn-facebook"><img src="imgs/facebook.png" alt="">Facebook</button>
                 </div>
-    
             </div>
         </div>
+        
+        
+
+   
 
         <!-- FOOTER -->
 
@@ -137,5 +145,6 @@
                 </footer>
     
         <script src="scripts/menuHamburguesa.js"></script>
+        <script src="inicio.js"></script>
 </body>
 </html>
