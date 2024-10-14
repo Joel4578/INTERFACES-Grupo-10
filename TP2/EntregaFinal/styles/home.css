@@ -50,7 +50,14 @@ body{
     height: 226px;
     top: 11px;
     left: 7.3px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+.card:hover .overlap-group {
+    border-color: var(--collection-1-violeta-principal);
+    box-shadow: 0px 0px 8px 0px var(--collection-1-violeta-principal);
+}
+
 
 .card .card-img-juego {
     width: 100%;
@@ -59,6 +66,7 @@ body{
     border-radius: 6px;
     border: 2px solid var(--collection-1-gris-cards);
 }
+
 
 .card .card-pie {
     margin-top: 4px;
@@ -122,6 +130,19 @@ body{
     background-color: var(--collection-1-verde-primario);
 }
 
+.card:hover .rectangle-2 {
+    border-top: 1px solid var(--collection-1-violeta-principal); /* Borde superior en hover */
+    border-left: 1px solid var(--collection-1-violeta-principal); /* Borde izquierdo en hover */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    box-shadow: 0px -1.8px 4px 0.5px var(--collection-1-violeta-principal); /* Sombra */
+}
+
+
+.card:hover .rectangle-wrapper {
+    border-left: 1px solid var(--collection-1-violeta-principal);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: -1.2px 2px 4px 0px var(--collection-1-violeta-principal);
+}
 .card .rectangle-wrapper {
     position: absolute;
     width: 9px;
