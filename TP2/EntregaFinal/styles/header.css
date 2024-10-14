@@ -78,4 +78,82 @@
     justify-content: end;
     align-items: center;
 }
+
 /* fin header */
+
+/* empieza el responsive!!!!!!! */
+
+@media(max-width:768px){
+
+    
+/* inicio header */
+.nav {
+    padding: 10px;
+    background-color: #1b1b1b;
+}
+
+.nav ul {
+    display: grid;
+    grid-template-columns: 20% 5% auto 5% 5%;
+    list-style: none;
+}
+
+.nav ul li .men-ham {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav .men-ham {
+    background-color: #1b1b1b;
+    border: none;
+    cursor: pointer;
+}
+
+.nav #search input {
+    height: 32px;
+    width: 120px;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    margin-right: 20px;
+    background-color: #3d3d3d;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav #search .iconoSearch {
+    height: 10px;
+}
+
+.nav #search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.nav #tituloPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.nav #carrito {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 8px;
+}
+
+.nav #cuenta {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+    
+}
