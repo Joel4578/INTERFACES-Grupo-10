@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
     height: 80vh;
+    margin-top: 35px;
 }
 
 .container h2 {
@@ -25,7 +26,7 @@
     color: #fff;
 }
 
-.container input {
+.container button, input {
     display: grid;
     width: 408.38px;
     height: 44px;
@@ -33,8 +34,19 @@
     color: #ffffff;
     background-color: #3d3d3d;
     border: none;
-    padding: 10px;
-    margin: 10px;
+    /* margin: 10px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.container input {
+    padding-left: 10px;
+}
+
+.container button a {
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 .container-enviar .enviar {
@@ -93,7 +105,10 @@
     padding: 30px;
 }
 
-.container .container-IncioExterior button {
+.container .container-IncioExterior .btn-google {
+    background-color: #fff;
+    transition: 0.5s;
+    color: #000;
     width: 485px;
     height: 47px;
     font-weight: bold;
@@ -106,16 +121,20 @@
     margin: 10px;
 }
 
-.container .container-IncioExterior .btn-google {
-    background-color: #fff;
-    transition: 0.5s;
-    color: #000;
-}
-
 .container .container-IncioExterior .btn-facebook {
     background-color: #1878F1;
     transition: 0.5s;
     color: #fff;
+    width: 485px;
+    height: 47px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 7px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto 80%;
+    margin: 10px;
 }
 
 .container .container-IncioExterior .btn-google:hover {
