@@ -1,3 +1,69 @@
+/*prueba de mobile first*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    padding: 10px;
+    background-color: #1b1b1b;
+}
+
+.nav ul {
+    display: flex; /* Usar Flexbox para distribución */
+    justify-content: space-between; /* Espaciado entre elementos */
+    align-items: center; /* Centrar verticalmente */
+    list-style: none;
+}
+
+.nav ul li {
+    margin: 0 5px; /* Espaciado horizontal entre elementos */
+}
+
+.nav #search {
+    display: flex;
+    align-items: center;
+}
+
+.nav #search input {
+    height: 30px; /* Altura ajustada */
+    width: 50px; /* Ancho reducido para pantallas pequeñas */
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+    background-color: #3d3d3d;
+    color: #fff;
+    font-size: 12px; /* Tamaño de fuente reducido */
+}
+
+.nav #tituloPrincipal {
+    display: flex;
+    justify-content: center; /* Centrar el logo horizontalmente */
+    margin-top: 5px; /* Espaciado superior */
+    width: 100%; /* Asegurar que ocupe todo el ancho */
+}
+
+.nav #tituloPrincipal img {
+    max-width: 100%; /* Ajustar el logo para que no desborde */
+    height: auto; /* Mantener proporción */
+}
+
+.nav #carrito,
+.nav #cuenta {
+    display: flex;
+    justify-content: center; /* Centrar iconos de carrito y cuenta */
+}
+
+.nav #carrito img,
+.nav #cuenta img {
+    width: 25px; /* Ajustar el tamaño de los iconos */
+    height: auto; /* Mantener proporción */
+}
+
+@media(min-width:600px){
+
 * {
     padding: 0;
     margin: 0;
@@ -75,5 +141,6 @@
     display: flex;
     justify-content: end;
     align-items: center;
+}
 }
 /* fin header */

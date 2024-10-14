@@ -27,7 +27,7 @@ body {
     z-index: 10;
 }
 
-.Juego-container::before {
+.container-principal::before {
     content: ""; 
     position: absolute; 
     top: 0; 
@@ -43,24 +43,32 @@ body {
 
 .btn-jugar {
     position: relative; 
-    padding: 0px 20px; 
+    padding: 10px 20px; 
     background-color: #000; 
     border: solid 2px var(--collection-1-verde-primario); 
     color: #ffffff; 
     font-size: 16px; 
     cursor: pointer;
-    transition: background-color 0.3s; 
+    transition: all 0.3s ease; 
     border-radius: 10px; 
-    z-index: 1; /* Asegura que esté encima del pseudo-elemento */
+    z-index: 1; 
     display: flex;
     align-items: center;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Sombra suave */
 }
-
 
 .btn-jugar:hover {
-    cursor: pointer;
-    background-color: var(--collection-1-verde-secundario);
+    background: linear-gradient(45deg, var(--collection-1-verde-primario), var(--collection-1-verde-secundario)); /* Gradiente */
+    color: #000; /* Cambia el color del texto */
+    border: solid 2px var(--collection-1-verde-secundario);
+    transform: scale(1.1); /* Aumento de tamaño */
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
 }
+
+.btn-jugar:active {
+    transform: scale(1.05); /* Reduce ligeramente el tamaño al hacer clic */
+}
+
 
 .opciones{
     width: 755px;
@@ -78,24 +86,25 @@ body {
 }
 
 
-.btn-compartir{
+.btn-compartir {
     padding: 5px 10px;
     background-color: #000; 
     border: solid 2px var(--collection-1-verde-primario); 
     color: #ffffff;
     font-size: 14px; 
     cursor: pointer; 
-    transition: background-color 0.3s; 
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
     border-radius: 10px;
     margin-left: 20px;
     display: flex;
     align-items: center;
-   
 }
 
-.btn-compartir:hover{
-    cursor: pointer;
+.btn-compartir:hover {
     background-color: var(--collection-1-verde-secundario);
+    transform: translateY(-3px); /* Movimiento hacia arriba */
+    box-shadow: 0 0 10px var(--collection-1-verde-secundario), 
+                0 0 20px var(--collection-1-verde-secundario); /* Resplandor */
 }
 
 .info-container{

@@ -76,3 +76,33 @@
     padding-top: 10px;
 }
 
+.input-container {
+    position: relative; /* Necesario para posicionar el icono */
+}
+
+.error-icon {
+    color: red;
+    position: absolute; /* Posicionamiento absoluto */
+    right: 10px; /* Ajusta según necesites */
+    top: 50%; /* Centrado vertical */
+    transform: translateY(-50%); /* Ajusta para centrar realmente */
+    display: none; /* Inicialmente oculto */
+    font-size: 16px; /* Ajusta el tamaño del icono */
+    
+}
+.input-error {
+    border: 1px solid red; /* Cambia el borde a rojo */
+}
+
+.captcha {
+    display: flex; 
+    align-items: center; 
+    background-color: #ffffff;
+    width: 231px;
+    height: 62px; 
+    margin: 0 auto;
+}
+
+.captcha input[type="checkbox"] {
+    margin-left: -80px;
+}

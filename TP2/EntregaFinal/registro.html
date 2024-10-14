@@ -58,14 +58,41 @@
 
                     <h2>Registrarse</h2>
                     
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellido">
-                    <input type="text" placeholder="Nickname">
-                    <input type="text" placeholder="Correo electrónico">
-                    <input type="text" placeholder="Contraseña">
-                    <input type="text" placeholder="Repetir contraseña">
-                    <input type="date" placeholder="Fecha de nacimiento">
+                    <div class="input-container">
+                        <input type="text" placeholder="Nombre">
+                        <span class="error-icon">✖</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Apellido">
+                        <span class="error-icon">✖</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Nickname">
+                        <span class="error-icon">✖</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Correo electrónico">
+                        <span class="error-icon">✖</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Contraseña">
+                        <span class="error-icon">✖</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Repetir contraseña">
+                        <span class="error-icon">✖</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="date" placeholder="Fecha de nacimiento">
+                        <span class="error-icon">✖</span>
+                    </div>
+                    
                     <a href="inicioSesion.html">¿Ya tienes cuenta?</a>
+                    
+                    <div class="captcha">
+                       <input type="checkbox"> 
+                       <p>No soy un robot</p>
+                    </div>
 
                     <div class="container-enviar">
                         <input class="enviar" type="submit" value="Registrate">
@@ -76,61 +103,10 @@
             </div>
         </div>
 
-        <footer>
-            <div class="footer-container">
-                <div class="footer-image">
-                    <img src="imgs/footer/logoFooter.png" alt="">
-                </div>
-    
-                <div class="footer-links">
-                    <div class="container-footer-links">
-                        <section>
-                            <h2>Ayuda</h2>
-                            <ul>
-                                <li><a href="#">Acerca de</a></li>
-                                <li><a href="#">Preguntas frecuentes</a></li>
-                                <li><a href="#">Feedback</a></li>
-                            </ul>
-                        </section>
-        
-                        <section>
-                            <h2>Desarrolladores</h2>
-                            <ul>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">¿Quiénes somos?</a></li>
-                            </ul>
-                        </section>
-        
-                        <section>
-                            <h2>Términos de uso</h2>
-                            <ul>
-                                <li><a href="#">Uso de la página</a></li>
-                                <li><a href="#">Ámbito de validez</a></li>
-                            </ul>
-                        </section>
-        
-                        <section>
-                            <h2>Privacidad</h2>
-                            <ul>
-                                <li><a href="#">Declaración de Privacidad</a></li>
-                                <li><a href="#">Declaración de cookies</a></li>
-                            </ul>
-                        </section>
-                    </div>
-                </div>
-    
-                <div class="footer-social">
-                    <ul>
-                        <li><a href="#"><img src="imgs/footer/icono-facebook.png" alt="Facebook"></a></li>
-                        <li><a href="#"><img src="imgs/footer/icono-x.png" alt="Twitter"></a></li>
-                        <li><a href="#"><img src="imgs/footer/icono-instagram.png" alt="Instagram"></a></li>
-                    </ul>
-                </div>
-            </div>
-                </footer>
-
+      
     </div>
 
     <script src="scripts/menuHamburguesa.js"></script>
+    <script src="registro.js"></script>
 </body>
 </html>
