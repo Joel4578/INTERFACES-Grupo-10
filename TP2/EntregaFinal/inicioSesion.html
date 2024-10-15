@@ -16,8 +16,6 @@
 </head>
 <body>
 
-    <div class="fondo">
-
         <!-- MENU HAMBURGUESA ABIERTO -->
         
         <div class="container-menu-hamburguesa-abierto">
@@ -60,12 +58,18 @@
             <div class="container-inicioSesion">
 
                 <div class="container-principal">
-                    <h2>Iniciar sesion</h2>
-                    <input type="text" placeholder="Correo electronico">
-                    <input type="text" placeholder="Contraseña">
-                    <p>¿olvidaste tu contraseña?</p>
+                    <h2>Iniciar sesión</h2>
+                    <div class="input-container">
+                        <input type="text" id="email" placeholder="Correo electrónico">
+                        <span class="error-icon" id="emailError" style="display: none;">✖</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" id="password" placeholder="Contraseña">
+                        <span class="error-icon" id="passwordError" style="display: none;">✖</span>
+                    </div>
+                    <p>¿Olvidaste tu contraseña?</p>
                     <div class="container-enviar">
-                        <button class="enviar"><a href="home.html">Login</a></button>
+                        <input id="loginButton" class="enviar" type="button" value="Login">
                     </div>
                 </div>
 
@@ -137,5 +141,7 @@
                 </footer>
     
         <script src="scripts/menuHamburguesa.js"></script>
+        <script src="scripts/inicio.js"></script>
+
 </body>
 </html>
