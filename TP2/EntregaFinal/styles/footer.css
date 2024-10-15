@@ -68,3 +68,21 @@ footer {
     display: grid;
     justify-content: center;
 }
+
+@media(max-width:768px){
+.img-logo-footer{
+    width: 200px;
+    height: 160px;
+}
+.footer-links .container-footer-links {
+    gap: 25px;
+}
+.footer-social ul {
+    display: block;
+    margin-block: 39px;
+}
+.footer-social ul li {
+    margin-bottom: 20px;
+}
+
+}

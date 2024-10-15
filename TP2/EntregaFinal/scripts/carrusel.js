@@ -37,12 +37,12 @@ function configurarCarrusel(izqBtn, derBtn, content) {
     actualizarFlechas();
 
     derBtn.addEventListener("click", () => {
-        content.scrollLeft += 1147;
+        content.scrollLeft += 204;
         setTimeout(actualizarFlechas, 400);
     });
 
     izqBtn.addEventListener("click", () => {
-        content.scrollLeft -= 1147;
+        content.scrollLeft -= 204;
         setTimeout(actualizarFlechas, 400);  
     });
 
@@ -56,6 +56,7 @@ document.querySelectorAll(".categoria-con-juegos").forEach(categoria => {
 
     configurarCarrusel(izqBtn, derBtn, content);
 });
+
 
 // juegos destacados
 const circulitos = document.querySelectorAll(".circulo"); 
@@ -80,7 +81,7 @@ function configurarCarruselDestacados() {
         } else {
             izqBtnDest.classList.remove("flecha-oculta");
         }
-        if (Math.ceil(contentDestacados.scrollLeft) >= Math.ceil(maxScrollIzq)) {
+        if (Math.ceil(contentDestacados.scrollLeft + 1) >= Math.ceil(maxScrollIzq)) {
             derBtnDest.classList.add("flecha-oculta");
         } else {
             derBtnDest.classList.remove("flecha-oculta");
@@ -90,9 +91,9 @@ function configurarCarruselDestacados() {
     function moverCirculito() {
         const scrollLeft = contentDestacados.scrollLeft;
         const totalItems = circulitos.length;
-        const itemWidth = contentDestacados.scrollWidth / totalItems;
+        const itemWidth = maxScrollIzq / (totalItems - 1);
 
-        circulitoActual = Math.floor(scrollLeft / itemWidth);
+        circulitoActual = Math.round(scrollLeft / itemWidth);
         actualizarCirculitos();
     }
 
@@ -100,19 +101,19 @@ function configurarCarruselDestacados() {
     moverCirculito();
 
     derBtnDest.addEventListener("click", () => {
-        contentDestacados.scrollLeft += 1158;
+        contentDestacados.scrollLeft += 413;
         setTimeout(() => {
             actualizarFlechas();
             moverCirculito();
-        }, 400);
+        }, 300); 
     });
 
     izqBtnDest.addEventListener("click", () => {
-        contentDestacados.scrollLeft -= 1158;
+        contentDestacados.scrollLeft -= 413;
         setTimeout(() => {
             actualizarFlechas();
             moverCirculito();
-        }, 400);
+        }, 300);
     });
 
     contentDestacados.addEventListener("scroll", () => {
