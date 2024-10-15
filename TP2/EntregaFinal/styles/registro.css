@@ -109,6 +109,28 @@ body{
     position: relative; /* Necesario para posicionar el icono */
 }
 
+.captcha-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.captcha-container .captcha .imagen{
+    background-image: url(../imgs/captcha.png);
+    background-size: cover;
+    height: 62px;
+    width: 231px;
+}
+
+.captcha-container .captcha .imagen input{
+    height: 25px;
+    position: relative;
+    right: 83%;
+    top: 18px;
+}
+
 .error-icon {
     color: red;
     position: absolute; /* Posicionamiento absoluto */
@@ -119,6 +141,7 @@ body{
     font-size: 16px; /* Ajusta el tamaño del icono */
     
 }
+
 .input-error {
     border: 1px solid red; /* Cambia el borde a rojo */
 }
