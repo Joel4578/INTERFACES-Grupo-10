@@ -22,3 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }, intervalTime);
 });
 
+const corazonButton = document.querySelector('.corazon');
+
+corazonButton.addEventListener('click', () => {
+    corazonButton.classList.toggle('active');
+});

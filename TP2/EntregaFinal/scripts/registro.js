@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         if (allFilled) {
-            window.location.href = 'paginaDestino.html';
+            window.location.href = 'home.html';
         }
     });
 });

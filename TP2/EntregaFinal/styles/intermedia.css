@@ -97,6 +97,39 @@
     margin: 10px;
 }
 
+.botones-extra .corazon {
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    outline: none; /* Sin contorno al hacer clic */
+    transition: transform 0.3s ease; /* Transición para la transformación */
+}
+
+.botones-extra .corazon img {
+    width: 30px; /* Ajusta el tamaño según sea necesario */
+    height: 30px; /* Ajusta el tamaño según sea necesario */
+    transition: filter 0.3s ease; /* Transición para el cambio de color */
+}
+
+/* Efecto hover para el botón corazón */
+.botones-extra .corazon:hover img {
+    filter: brightness(0) saturate(1000%) invert(25%) sepia(100%) hue-rotate(0deg) brightness(0) saturate(1000%) invert(0%); /* Cambia a rojo */
+    transform: scale(1.1); /* Aumento del tamaño para el efecto de rebote */
+}
+
+/* Efecto de rebote al hacer clic */
+.botones-extra .corazon:active img {
+    transform: scale(0.9); /* Efecto de "presionar" al hacer clic */
+}
+
+/* Cambiar el color a rojo de forma permanente al hacer clic */
+.botones-extra .corazon.active img {
+    filter: brightness(0) saturate(1000%) invert(50%) sepia(100%) hue-rotate(0deg) brightness(0) saturate(1000%) invert(0%); /* Rojo */
+}
+
+
+
+
 /* ZONA COMENTARIOS */
 
 /* ESCRIBIR COMENTARIOS */
