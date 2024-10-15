@@ -35,6 +35,10 @@
     margin-left: 10px;
 }
 
+.breadcrumb .pagina-donde-estamos {
+    color: #6605F8;
+}
+
 /* ZONA JUEGO */
 
 /* ZONA PANTALLA */
@@ -202,8 +206,6 @@
     width: 38px;
     height: 36px;
 } 
-
-.dejar-comentar
 
 .dejar-comentario .container-comentario-nuevo {
     border-bottom: 2px solid #fff;
