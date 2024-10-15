@@ -65,7 +65,28 @@
     margin-bottom: 30px;
 }
 
-.container-principal .container-titulo .boton button{
+.container-principal .container-titulo .boton .btn-compartir {
+    padding: 5px 10px;
+    background-color: #000; 
+    border: solid 2px var(--collection-1-verde-primario); 
+    color: #ffffff;
+    font-size: 14px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-compartir:hover {
+    background-color: var(--collection-1-verde-secundario);
+    transform: translateY(-3px); /* Movimiento hacia arriba */
+    box-shadow: 0 0 10px var(--collection-1-verde-secundario), 
+                0 0 20px var(--collection-1-verde-secundario); /* Resplandor */
+}
+
+/* .container-principal .container-titulo .boton button{
     background-color: black;
     color: #fff;
     font-family: "Lato-ExtraBold", Helvetica;
@@ -78,7 +99,7 @@
     margin: 10px;
     width: 140px;
     height: 30px;
-}
+} */
 
 .container-principal .container-titulo .boton img {
     width: 21px;

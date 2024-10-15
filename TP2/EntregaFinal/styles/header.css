@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+:root {
+    --collection-1-verde-primario: rgba(16, 255, 19, 1);
+    --collection-1-blanco-transparencia: rgba(255, 255, 255, 0.6);
+    --collection-1-blanco: rgba(255, 255, 255, 1);
+    --collection-1-verde-secundario: rgba(38, 125, 6, 1);
+    --collection-1-fondo: rgba(32, 32, 32, 1);
+    --collection-1-violeta-principal: rgba(102, 5, 248, 1);
+    --collection-1-violeta5: rgba(45, 3, 109, 1);
+    --collection-1-violeta-contraste: rgba(85, 7, 202, 1);
+    --collection-1-color: rgba(61, 61, 61, 1);
+    --collection-1-gris-5: rgba(255, 255, 255, 0.1);
+    --collection-1-color-2: var(--collection-1-gris-5);
+    --collection-1-gris-cards: rgba(27, 27, 27, 1);
+}
+
 .fondo {
     background-color: #202020;
     /* background-repeat: no-repeat; */
