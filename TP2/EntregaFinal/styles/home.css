@@ -273,6 +273,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 43px; 
+    justify-content: center;
 }
 .categoria-con-juegos {
     width: 1440px;
